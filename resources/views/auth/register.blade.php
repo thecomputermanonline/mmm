@@ -12,13 +12,13 @@
 
                 <a href="#!" id="markerCategory" >
                     <span class="img"></span>
-                    <span class="text">AS A MARKER</span>
+                    <span class="text">Client</span>
                 </a>
             </div>
             <div class="inner">
                 <a href="#!" id="studentCategory" class="active" >
                     <span class="img"></span>
-                    <span class="text">AS A STUDENT</span>
+                    <span class="text">Staff</span>
                 </a>
             </div>
 

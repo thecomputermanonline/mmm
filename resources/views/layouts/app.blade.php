@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>..:: @yield('title') - {{ config('app.name', 'Trish Academy') }} ::.. </title>
+    <title>..:: @yield('title') - {{ config('app.name', 'Migration Masters') }} ::.. </title>
 
 
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -25,7 +25,7 @@
         <div class="login-header">
             <div class="logo">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('images/trish-logo.png') }}" alt="Trish Academy">
+                    <img src="{{ asset('images/logo-black.png') }}" alt="Migration Masters">
                 </a>
             </div>
 fffff
