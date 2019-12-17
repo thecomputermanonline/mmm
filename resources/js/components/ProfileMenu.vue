@@ -48,7 +48,7 @@
 Logout
                 </a>
 
-                <form id="logout-form" :action="logout()"   style="display: none;">
+                <form id="logout-form" :action="logout"   style="display: none;">
                     @csrf
                 </form>
 
