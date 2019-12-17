@@ -82,7 +82,7 @@
 
 
     <div class="session-footer medium">
-        Don’t have an account? <a href="/register">Sign up</a>
+        Don’t have an account? <a href="/">Start by requesting Consultation</a>
     </div>
 
 @endsection
