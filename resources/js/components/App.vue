@@ -22,11 +22,11 @@
 <!--                            <li><a href="/tests-dashboard">Take Test</a></li>-->
 <!--                            <li class="notification"><a href="/feedback">Feedback</a></li>-->
 <!--                            <li><a href="/history">History</a></li>-->
-                            <router-link :to="{ name: 'login' }" class="nav-link" v-if="!isLoggedIn">Login</router-link>
-                            <router-link :to="{ name: 'register' }" class="nav-link" v-if="!isLoggedIn">Register</router-link>
+                            <router-link :to="{ name: 'login' }" class="nav-link" v-if="isLoggedIn">Login</router-link>
+                            <router-link :to="{ name: 'register' }" class="nav-link" v-if="isLoggedIn">Register</router-link>
 <!--                            <router-link :to="{ name: 'home' }" class="current">Home</router-link>-->
 
-                            <router-link :to="{ name: 'home' }" class="current" v-if="isLoggedIn">DashBoard</router-link>
+                            <router-link :to="{ name: 'home' }" class="current" v-if="!isLoggedIn">DashBoard</router-link>
 <!--                            <li v-if="isLoggedIn">-->
 <!--                                <a>-->
 <!--                                Hi, {{name}}-->
@@ -40,7 +40,7 @@
                     </nav>
 
                 </div>
-                <profile-menu v-if="isLoggedIn"></profile-menu>
+                <profile-menu v-if="!isLoggedIn"></profile-menu>
             </div>
         </header>
 
