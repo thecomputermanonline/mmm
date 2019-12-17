@@ -10,7 +10,7 @@ class SinglePageController extends Controller
 
     public function __construct()
     {
-        //$this->middleware(['auth','verified'] );
+        $this->middleware(['auth','verified'] );
         //$this->middleware('verified');
     }
     public function index()
