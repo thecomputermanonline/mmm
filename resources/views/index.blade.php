@@ -227,80 +227,6 @@
 
 
 
-    <!-- ABOUT-2
-    ============================================= -->
-    <section id="about-2" class="wide-60 about-section division">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-
-
-                <!-- ABOUT IMAGE -->
-                <div class="col-md-6">
-                    <div class="about-img text-center mb-40">
-
-                        <!-- Image -->
-                        <img class="img-fluid" src="images/image-03.png" alt="about-image" />
-
-                        <!-- Video Link -->
-                        <div class="video-square">
-                            <div class="video-link icon-lg primary-color">
-                                <a class="video-popup2" href="https://www.youtube.com/watch?v=7e90gBu4pas">
-                                    <span class="flaticon-159-play-button"></span>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- ABOUT TEXT	-->
-                <div class="col-md-6">
-                    <div class="about-2-txt pc-20 mb-40">
-
-
-                        <!-- Section ID -->
-                        <span class="section-id noto-font-700 id-color">About Agency</span>
-
-                        <!-- Title -->
-                        <h3 class="h3-lg darkblue-color">Consultations for prospective immigrants</h3>
-
-                        <!-- INFO BOX #1 -->
-                        <div class="box-list">
-                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum vitae purus
-                                primis pretium ligula rutrum luctus blandit porta justo integer. Feugiat a primis ultrice
-                                ligula
-                            </p>
-                        </div>
-
-                        <!-- INFO BOX #2 -->
-                        <div class="box-list">
-                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>Nemo ipsam egestas volute turpis dolores and aliquam quaerat sodales sapien undo pretium
-                                purus ligula tempus ipsum undo auctor a mauris lectus ipsum blandit
-                            </p>
-                        </div>
-
-                        <!-- INFO BOX #3 -->
-                        <div class="box-list">
-                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>Quaerat sodales sapien undo euismod purus and blandit laoreet augue an augue egestas. Augue
-                                iaculis purus and augue tempor congue magna egestas magna ligula
-                            </p>
-                        </div>
-
-
-                    </div>
-                </div>	<!-- END ABOUT TEXT	-->
-
-
-            </div>	  <!-- End row -->
-        </div>	   <!-- End container -->
-    </section>	<!-- END ABOUT-2 -->
-
-
-
 
     <!-- ABOUT-4
     ============================================= -->
@@ -360,214 +286,214 @@
 
 
 
-    <!-- STATISTIC-2
-    ============================================= -->
-    <div id="statistic-2" class="bg-blue-map wide-60 statistic-section division">
-        <div class="container">
+{{--    <!-- STATISTIC-2--}}
+{{--    ============================================= -->--}}
+{{--    <div id="statistic-2" class="bg-blue-map wide-60 statistic-section division">--}}
+{{--        <div class="container">--}}
 
 
-            <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title white-color center">
+{{--            <!-- SECTION TITLE -->--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12 section-title white-color center">--}}
 
-                    <!-- Title -->
-                    <h2 class="h2-xs 1darkblue-color">Why Choose VisaPRO?</h2>
+{{--                    <!-- Title -->--}}
+{{--                    <h2 class="h2-xs 1darkblue-color">Why Choose VisaPRO?</h2>--}}
 
-                    <!-- Text -->
-                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,
-                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
+{{--                    <!-- Text -->--}}
+{{--                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,--}}
+{{--                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa--}}
+{{--                    </p>--}}
 
-                </div>
-            </div>	 <!-- END SECTION TITLE -->
-
-
-            <div class="row">
+{{--                </div>--}}
+{{--            </div>	 <!-- END SECTION TITLE -->--}}
 
 
-                <!-- STATISTIC BLOCK #1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="statistic-block icon-sm">
-
-                        <!-- Icon -->
-                        <span class="flaticon-316-mortarboard darkblue-color"></span>
-
-                        <!-- Text -->
-                        <h5 class="primary-color"><span class="count-element">820</span>+</h5>
-                        <p class="p-md darkblue-color">Students</p>
-
-                        <!-- Text -->
-                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum
-                            purus a primis undo at ligula luctus
-                        </p>
-
-                        <!-- Link -->
-                        <a href="#" class="darkblue-color">Read Testimonials</a>
-
-                    </div>
-                </div>
+{{--            <div class="row">--}}
 
 
-                <!-- STATISTIC BLOCK #2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="statistic-block icon-sm">
+{{--                <!-- STATISTIC BLOCK #1 -->--}}
+{{--                <div class="col-md-6 col-lg-3">--}}
+{{--                    <div class="statistic-block icon-sm">--}}
 
-                        <!-- Icon -->
-                        <span class="flaticon-431-bank darkblue-color"></span>
+{{--                        <!-- Icon -->--}}
+{{--                        <span class="flaticon-316-mortarboard darkblue-color"></span>--}}
 
-                        <!-- Text -->
-                        <h5 class="primary-color"><span class="count-element">127</span></h5>
-                        <p class="p-md darkblue-color">Universities</p>
+{{--                        <!-- Text -->--}}
+{{--                        <h5 class="primary-color"><span class="count-element">820</span>+</h5>--}}
+{{--                        <p class="p-md darkblue-color">Students</p>--}}
 
-                        <!-- Text -->
-                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum
-                            purus a primis undo at ligula luctus
-                        </p>
+{{--                        <!-- Text -->--}}
+{{--                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum--}}
+{{--                            purus a primis undo at ligula luctus--}}
+{{--                        </p>--}}
 
-                        <!-- Link -->
-                        <a href="#" class="darkblue-color">Meet Partners</a>
+{{--                        <!-- Link -->--}}
+{{--                        <a href="#" class="darkblue-color">Read Testimonials</a>--}}
 
-                    </div>
-                </div>
-
-
-                <!-- STATISTIC BLOCK #3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="statistic-block icon-sm">
-
-                        <!-- Icon -->
-                        <span class="flaticon-285-internet-2 darkblue-color"></span>
-
-                        <!-- Text -->
-                        <h5 class="primary-color"><span class="count-element">81</span></h5>
-                        <p class="p-md darkblue-color">Countries</p>
-
-                        <!-- Text -->
-                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum
-                            purus a primis undo at ligula luctus
-                        </p>
-
-                        <!-- Link -->
-                        <a href="#" class="darkblue-color">View Countries</a>
-
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
 
 
-                <!-- STATISTIC BLOCK #4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="statistic-block icon-sm">
+{{--                <!-- STATISTIC BLOCK #2 -->--}}
+{{--                <div class="col-md-6 col-lg-3">--}}
+{{--                    <div class="statistic-block icon-sm">--}}
 
-                        <!-- Icon -->
-                        <span class="flaticon-067-suitcase-1 darkblue-color"></span>
+{{--                        <!-- Icon -->--}}
+{{--                        <span class="flaticon-431-bank darkblue-color"></span>--}}
 
-                        <!-- Text -->
-                        <h5 class="primary-color"><span class="count-element">969</span></h5>
-                        <p class="p-md darkblue-color">Immigrations</p>
+{{--                        <!-- Text -->--}}
+{{--                        <h5 class="primary-color"><span class="count-element">127</span></h5>--}}
+{{--                        <p class="p-md darkblue-color">Universities</p>--}}
 
-                        <!-- Text -->
-                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum
-                            purus a primis undo at ligula luctus
-                        </p>
+{{--                        <!-- Text -->--}}
+{{--                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum--}}
+{{--                            purus a primis undo at ligula luctus--}}
+{{--                        </p>--}}
 
-                        <!-- Link -->
-                        <a href="#" class="darkblue-color">Read More</a>
+{{--                        <!-- Link -->--}}
+{{--                        <a href="#" class="darkblue-color">Meet Partners</a>--}}
 
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
 
 
-            </div>	<!-- End row -->
-        </div>	 <!-- End container -->
-    </div>	 <!-- END STATISTIC-2 -->
+{{--                <!-- STATISTIC BLOCK #3 -->--}}
+{{--                <div class="col-md-6 col-lg-3">--}}
+{{--                    <div class="statistic-block icon-sm">--}}
+
+{{--                        <!-- Icon -->--}}
+{{--                        <span class="flaticon-285-internet-2 darkblue-color"></span>--}}
+
+{{--                        <!-- Text -->--}}
+{{--                        <h5 class="primary-color"><span class="count-element">81</span></h5>--}}
+{{--                        <p class="p-md darkblue-color">Countries</p>--}}
+
+{{--                        <!-- Text -->--}}
+{{--                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum--}}
+{{--                            purus a primis undo at ligula luctus--}}
+{{--                        </p>--}}
+
+{{--                        <!-- Link -->--}}
+{{--                        <a href="#" class="darkblue-color">View Countries</a>--}}
+
+{{--                    </div>--}}
+{{--                </div>--}}
+
+
+{{--                <!-- STATISTIC BLOCK #4 -->--}}
+{{--                <div class="col-md-6 col-lg-3">--}}
+{{--                    <div class="statistic-block icon-sm">--}}
+
+{{--                        <!-- Icon -->--}}
+{{--                        <span class="flaticon-067-suitcase-1 darkblue-color"></span>--}}
+
+{{--                        <!-- Text -->--}}
+{{--                        <h5 class="primary-color"><span class="count-element">969</span></h5>--}}
+{{--                        <p class="p-md darkblue-color">Immigrations</p>--}}
+
+{{--                        <!-- Text -->--}}
+{{--                        <p>The magnis pretium dolor sapien  augue iaculis purus as tempor magna pretium undo ipsum--}}
+{{--                            purus a primis undo at ligula luctus--}}
+{{--                        </p>--}}
+
+{{--                        <!-- Link -->--}}
+{{--                        <a href="#" class="darkblue-color">Read More</a>--}}
+
+{{--                    </div>--}}
+{{--                </div>--}}
+
+
+{{--            </div>	<!-- End row -->--}}
+{{--        </div>	 <!-- End container -->--}}
+{{--    </div>	 <!-- END STATISTIC-2 -->--}}
 
 
 
 
     <!-- ABOUT-5
     ============================================= -->
-    <section id="about-5" class="wide-60 about-section division">
-        <div class="container">
+{{--    <section id="about-5" class="wide-60 about-section division">--}}
+{{--        <div class="container">--}}
 
 
-            <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title">
+{{--            <!-- SECTION TITLE -->--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12 section-title">--}}
 
-                    <!-- Title -->
-                    <h3 class="h3-lg darkblue-color">Find a consultant by:</h3>
+{{--                    <!-- Title -->--}}
+{{--                    <h3 class="h3-lg darkblue-color">Find a consultant by:</h3>--}}
 
-                    <!-- Text -->
-                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,
-                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
+{{--                    <!-- Text -->--}}
+{{--                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,--}}
+{{--                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa--}}
+{{--                    </p>--}}
 
-                </div>
-            </div>
-
-
-            <div class="row">
+{{--                </div>--}}
+{{--            </div>--}}
 
 
-                <!-- ABOUT TEXT	-->
-                <div class="col-lg-5">
-                    <div class="row">
-
-                        <div class="col-sm-6">
-                            <div class="about-5-txt mb-40">
-
-                                <!-- Title -->
-                                <h5 class="h5-xl darkblue-color">Country:</h5>
-
-                                <!-- List -->
-                                <ul class="abox-list">
-                                    <li><a href="#">Canada</a></li>
-                                    <li><a href="#">Australia</a></li>
-                                    <li><a href="#">United Kingdom</a></li>
-                                    <li><a href="#">USA</a></li>
-                                    <li><a href="#">Germany</a></li>
-                                    <li><a href="#">Netherlands</a></li>
-                                    <li class="more-info-link darkblue-color"><a href="#">View All</a></li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="about-5-txt mb-40">
-
-                                <!-- Title -->
-                                <h5 class="h5-xl darkblue-color">Pratice Area:</h5>
-
-                                <!-- List -->
-                                <ul class="abox-list">
-                                    <li><a href="#">Student Visa</a></li>
-                                    <li><a href="#">Working Visa</a></li>
-                                    <li><a href="#">Business visa</a></li>
-                                    <li><a href="#">PR Visa</a></li>
-                                    <li><a href="#">Tourist & Visitor Visa</a></li>
-                                    <li><a href="#">Immigration Consult</a></li>
-                                    <li class="more-info-link darkblue-color"><a href="#">View All</a></li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>	<!-- END ABOUT TEXT	-->
+{{--            <div class="row">--}}
 
 
-                <!-- ABOUT IMAGE -->
-                <div class="col-lg-7">
-                    <div class="about-5-img text-center mb-40">
-                        <img class="img-fluid" src="images/world-map.png" alt="about-image" />
-                    </div>
-                </div>
+{{--                <!-- ABOUT TEXT	-->--}}
+{{--                <div class="col-lg-5">--}}
+{{--                    <div class="row">--}}
+
+{{--                        <div class="col-sm-6">--}}
+{{--                            <div class="about-5-txt mb-40">--}}
+
+{{--                                <!-- Title -->--}}
+{{--                                <h5 class="h5-xl darkblue-color">Country:</h5>--}}
+
+{{--                                <!-- List -->--}}
+{{--                                <ul class="abox-list">--}}
+{{--                                    <li><a href="#">Canada</a></li>--}}
+{{--                                    <li><a href="#">Australia</a></li>--}}
+{{--                                    <li><a href="#">United Kingdom</a></li>--}}
+{{--                                    <li><a href="#">USA</a></li>--}}
+{{--                                    <li><a href="#">Germany</a></li>--}}
+{{--                                    <li><a href="#">Netherlands</a></li>--}}
+{{--                                    <li class="more-info-link darkblue-color"><a href="#">View All</a></li>--}}
+{{--                                </ul>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                        <div class="col-sm-6">--}}
+{{--                            <div class="about-5-txt mb-40">--}}
+
+{{--                                <!-- Title -->--}}
+{{--                                <h5 class="h5-xl darkblue-color">Pratice Area:</h5>--}}
+
+{{--                                <!-- List -->--}}
+{{--                                <ul class="abox-list">--}}
+{{--                                    <li><a href="#">Student Visa</a></li>--}}
+{{--                                    <li><a href="#">Working Visa</a></li>--}}
+{{--                                    <li><a href="#">Business visa</a></li>--}}
+{{--                                    <li><a href="#">PR Visa</a></li>--}}
+{{--                                    <li><a href="#">Tourist & Visitor Visa</a></li>--}}
+{{--                                    <li><a href="#">Immigration Consult</a></li>--}}
+{{--                                    <li class="more-info-link darkblue-color"><a href="#">View All</a></li>--}}
+{{--                                </ul>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                    </div>--}}
+{{--                </div>	<!-- END ABOUT TEXT	-->--}}
 
 
-            </div>	  <!-- End row -->
-        </div>	   <!-- End container -->
-    </section>	<!-- END ABOUT-5 -->
+{{--                <!-- ABOUT IMAGE -->--}}
+{{--                <div class="col-lg-7">--}}
+{{--                    <div class="about-5-img text-center mb-40">--}}
+{{--                        <img class="img-fluid" src="images/world-map.png" alt="about-image" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+
+{{--            </div>	  <!-- End row -->--}}
+{{--        </div>	   <!-- End container -->--}}
+{{--    </section>	<!-- END ABOUT-5 -->--}}
 
 
 
@@ -1871,201 +1797,201 @@
 
     <!-- TABS-2
     ============================================= -->
-    <section id="tabs-2" class="wide-60 tabs-section division">
-        <div class="container">
-            <div class="row">
+{{--    <section id="tabs-2" class="wide-60 tabs-section division">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
 
 
-                <!-- TABS NAVIGATION -->
-                <div class="col-md-12">
-                    <div class="tabs-nav clearfix">
-                        <ul class="tabs-2 primary-tabs">
+{{--                <!-- TABS NAVIGATION -->--}}
+{{--                <div class="col-md-12">--}}
+{{--                    <div class="tabs-nav clearfix">--}}
+{{--                        <ul class="tabs-2 primary-tabs">--}}
 
-                            <!-- TAB-1 LINK -->
-                            <li class="tab-link displayed" data-tab="tab-11">
-                                <span>Goverment Approved</span>
-                            </li>
+{{--                            <!-- TAB-1 LINK -->--}}
+{{--                            <li class="tab-link displayed" data-tab="tab-11">--}}
+{{--                                <span>Goverment Approved</span>--}}
+{{--                            </li>--}}
 
-                            <!-- TAB-2 LINK -->
-                            <li class="tab-link" data-tab="tab-12">
-                                <span>No Hidden Costs</span>
-                            </li>
+{{--                            <!-- TAB-2 LINK -->--}}
+{{--                            <li class="tab-link" data-tab="tab-12">--}}
+{{--                                <span>No Hidden Costs</span>--}}
+{{--                            </li>--}}
 
-                            <!-- TAB-3 LINK -->
-                            <li class="tab-link" data-tab="tab-13">
-                                <span>Fast, Easy & Secure</span>
-                            </li>
+{{--                            <!-- TAB-3 LINK -->--}}
+{{--                            <li class="tab-link" data-tab="tab-13">--}}
+{{--                                <span>Fast, Easy & Secure</span>--}}
+{{--                            </li>--}}
 
-                        </ul>
-                    </div>
-                </div>	<!-- END TABS NAVIGATION -->
-
-
-                <!-- TABS CONTENT -->
-                <div class="col-md-12">
-                    <div class="tabs-content">
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </div>	<!-- END TABS NAVIGATION -->--}}
 
 
-                        <!-- TAB-1 CONTENT -->
-                        <div id="tab-11" class="tab-content displayed">
-                            <div class="row d-flex align-items-center">
+{{--                <!-- TABS CONTENT -->--}}
+{{--                <div class="col-md-12">--}}
+{{--                    <div class="tabs-content">--}}
 
 
-                                <!-- TAB-1 IMAGE -->
-                                <div class="col-md-6 mb-40">
-                                    <div class="tab-img text-center">
-                                        <img class="img-fluid" src="images/image-01.png" alt="tab-image" />
-                                    </div>
-                                </div>
+{{--                        <!-- TAB-1 CONTENT -->--}}
+{{--                        <div id="tab-11" class="tab-content displayed">--}}
+{{--                            <div class="row d-flex align-items-center">--}}
 
 
-                                <!-- TAB-1 TEXT -->
-                                <div class="col-md-6">
-                                    <div class="txt-block pc-20 mb-40">
-
-                                        <!-- Title -->
-                                        <h3 class="h3-lg darkblue-color">We make the visa process faster</h3>
-
-                                        <!-- Text -->
-                                        <p>Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice
-                                            ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas
-                                            an ipsum turpis
-                                        </p>
-
-                                        <!-- Small Title -->
-                                        <h5 class="h5-md darkblue-color">Cubilia augue vitae laoreet</h5>
-
-                                        <!-- Text Box #1 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus pretium
-                                                ligula rutrum viverra tortor sapien sodales congue magna undo pretium purus pretium an
-                                                magnis nulla
-                                            </p>
-                                        </div>
-
-                                        <!-- Text Box #2 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor
-                                                sapien sodales sapien and vitae donec dolor sapien augue erat iaculis euismod
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
+{{--                                <!-- TAB-1 IMAGE -->--}}
+{{--                                <div class="col-md-6 mb-40">--}}
+{{--                                    <div class="tab-img text-center">--}}
+{{--                                        <img class="img-fluid" src="images/image-01.png" alt="tab-image" />--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
 
-                            </div>  <!-- End row -->
-                        </div>	<!-- END TAB-1 CONTENT -->
+{{--                                <!-- TAB-1 TEXT -->--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="txt-block pc-20 mb-40">--}}
+
+{{--                                        <!-- Title -->--}}
+{{--                                        <h3 class="h3-lg darkblue-color">We make the visa process faster</h3>--}}
+
+{{--                                        <!-- Text -->--}}
+{{--                                        <p>Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice--}}
+{{--                                            ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas--}}
+{{--                                            an ipsum turpis--}}
+{{--                                        </p>--}}
+
+{{--                                        <!-- Small Title -->--}}
+{{--                                        <h5 class="h5-md darkblue-color">Cubilia augue vitae laoreet</h5>--}}
+
+{{--                                        <!-- Text Box #1 -->--}}
+{{--                                        <div class="box-list">--}}
+{{--                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>--}}
+{{--                                            <p>Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus pretium--}}
+{{--                                                ligula rutrum viverra tortor sapien sodales congue magna undo pretium purus pretium an--}}
+{{--                                                magnis nulla--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+
+{{--                                        <!-- Text Box #2 -->--}}
+{{--                                        <div class="box-list">--}}
+{{--                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>--}}
+{{--                                            <p>Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor--}}
+{{--                                                sapien sodales sapien and vitae donec dolor sapien augue erat iaculis euismod--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
 
-                        <!-- TAB-2 CONTENT -->
-                        <div id="tab-12" class="tab-content">
-                            <div class="row d-flex align-items-center">
+{{--                            </div>  <!-- End row -->--}}
+{{--                        </div>	<!-- END TAB-1 CONTENT -->--}}
 
 
-                                <!-- TAB-2 IMAGE -->
-                                <div class="col-md-6">
-                                    <div class="tab-img text-center mb-40">
-                                        <img class="img-fluid" src="images/image-03.png" alt="tab-image" />
-                                    </div>
-                                </div>
+{{--                        <!-- TAB-2 CONTENT -->--}}
+{{--                        <div id="tab-12" class="tab-content">--}}
+{{--                            <div class="row d-flex align-items-center">--}}
 
 
-                                <!-- TAB-2 TEXT -->
-                                <div class="col-md-6">
-                                    <div class="txt-block pc-20 mb-40">
-
-                                        <!-- Title -->
-                                        <h3 class="h3-lg darkblue-color">Thousands of people choose our services</h3>
-
-                                        <!-- Text -->
-                                        <p>Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice
-                                            ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas
-                                            an ipsum turpis magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam
-                                        </p>
-
-                                        <!-- Text -->
-                                        <p>An enim nullam tempor sapien gravida donec enim blandit ipsum at porta justo integer velna
-                                            vitae auctor integer congue magna pretium purus pretium. An magnis nulla dolor sapien augue
-                                            erat iaculis
-                                        </p>
-
-                                        <!-- Button -->
-                                        <a href="#" class="btn btn-tra-grey primary-hover btn-arrow">
-                                            <span>Discover More <i class="fas fa-arrow-right"></i></span>
-                                        </a>
-
-                                    </div>
-                                </div>
+{{--                                <!-- TAB-2 IMAGE -->--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="tab-img text-center mb-40">--}}
+{{--                                        <img class="img-fluid" src="images/image-03.png" alt="tab-image" />--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
 
-                            </div>  <!-- End row -->
-                        </div>	<!-- END TAB-2 CONTENT -->
+{{--                                <!-- TAB-2 TEXT -->--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="txt-block pc-20 mb-40">--}}
+
+{{--                                        <!-- Title -->--}}
+{{--                                        <h3 class="h3-lg darkblue-color">Thousands of people choose our services</h3>--}}
+
+{{--                                        <!-- Text -->--}}
+{{--                                        <p>Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice--}}
+{{--                                            ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas--}}
+{{--                                            an ipsum turpis magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam--}}
+{{--                                        </p>--}}
+
+{{--                                        <!-- Text -->--}}
+{{--                                        <p>An enim nullam tempor sapien gravida donec enim blandit ipsum at porta justo integer velna--}}
+{{--                                            vitae auctor integer congue magna pretium purus pretium. An magnis nulla dolor sapien augue--}}
+{{--                                            erat iaculis--}}
+{{--                                        </p>--}}
+
+{{--                                        <!-- Button -->--}}
+{{--                                        <a href="#" class="btn btn-tra-grey primary-hover btn-arrow">--}}
+{{--                                            <span>Discover More <i class="fas fa-arrow-right"></i></span>--}}
+{{--                                        </a>--}}
+
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
 
-                        <!-- TAB-3 CONTENT -->
-                        <div id="tab-13" class="tab-content">
-                            <div class="row d-flex align-items-center">
+{{--                            </div>  <!-- End row -->--}}
+{{--                        </div>	<!-- END TAB-2 CONTENT -->--}}
 
 
-                                <!-- TAB-3 IMAGE -->
-                                <div class="col-md-6">
-                                    <div class="tab-img text-center mb-40">
-                                        <img class="img-fluid" src="images/image-02.png" alt="tab-image" />
-                                    </div>
-                                </div>
+{{--                        <!-- TAB-3 CONTENT -->--}}
+{{--                        <div id="tab-13" class="tab-content">--}}
+{{--                            <div class="row d-flex align-items-center">--}}
 
 
-                                <!-- TAB-3 TEXT -->
-                                <div class="col-md-6">
-                                    <div class="txt-block pc-20 mb-40">
-
-                                        <!-- Title -->
-                                        <h3 class="h3-lg darkblue-color">Get guarantee success with our advisors</h3>
-
-                                        <!-- Text Box #1 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice
-                                                ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas
-                                                an ipsum turpis
-                                            </p>
-                                        </div>
-
-                                        <!-- Text Box #2 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus pretium
-                                                ligula rutrum viverra tortor sapien sodales congue magna undo pretium purus pretium an
-                                                magnis nulla
-                                            </p>
-                                        </div>
-
-                                        <!-- Text Box #3 -->
-                                        <div class="box-list">
-                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                                            <p>Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor
-                                                sapien sodales sapien and vitae donec dolor sapien augue erat iaculis euismod
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
+{{--                                <!-- TAB-3 IMAGE -->--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="tab-img text-center mb-40">--}}
+{{--                                        <img class="img-fluid" src="images/image-02.png" alt="tab-image" />--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
 
-                            </div>  <!-- End row -->
-                        </div>	<!-- END TAB-3 CONTENT -->
+{{--                                <!-- TAB-3 TEXT -->--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="txt-block pc-20 mb-40">--}}
+
+{{--                                        <!-- Title -->--}}
+{{--                                        <h3 class="h3-lg darkblue-color">Get guarantee success with our advisors</h3>--}}
+
+{{--                                        <!-- Text Box #1 -->--}}
+{{--                                        <div class="box-list">--}}
+{{--                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>--}}
+{{--                                            <p>Semper lacus cursus porta, feugiat primis ligula risus auctor and rhoncus in ultrice--}}
+{{--                                                ligula purus ipsum primis in cubilia augue vitae laoreet augue in cubilia augue egestas--}}
+{{--                                                an ipsum turpis--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+
+{{--                                        <!-- Text Box #2 -->--}}
+{{--                                        <div class="box-list">--}}
+{{--                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>--}}
+{{--                                            <p>Fringilla risus nec, luctus mauris orci auctor purus euismod at pretium purus pretium--}}
+{{--                                                ligula rutrum viverra tortor sapien sodales congue magna undo pretium purus pretium an--}}
+{{--                                                magnis nulla--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+
+{{--                                        <!-- Text Box #3 -->--}}
+{{--                                        <div class="box-list">--}}
+{{--                                            <div class="box-list-icon"><i class="fas fa-genderless"></i></div>--}}
+{{--                                            <p>Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor--}}
+{{--                                                sapien sodales sapien and vitae donec dolor sapien augue erat iaculis euismod--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
 
-                    </div>
-                </div>	<!-- END TABS CONTENT -->
+{{--                            </div>  <!-- End row -->--}}
+{{--                        </div>	<!-- END TAB-3 CONTENT -->--}}
 
 
-            </div>    <!-- End row -->
-        </div>     <!-- End container -->
-    </section>	<!-- END TABS-2 -->
+{{--                    </div>--}}
+{{--                </div>	<!-- END TABS CONTENT -->--}}
+
+
+{{--            </div>    <!-- End row -->--}}
+{{--        </div>     <!-- End container -->--}}
+{{--    </section>	<!-- END TABS-2 -->--}}
 
 
 
@@ -2116,321 +2042,321 @@
 
     <!-- TESTIMONIALS-1
     ============================================= -->
-    <section id="reviews-1" class="wide-100 reviews-section division">
-        <div class="container">
+{{--    <section id="reviews-1" class="wide-100 reviews-section division">--}}
+{{--        <div class="container">--}}
 
 
-            <!-- SECTION TITLE -->
-            <div class="row">
-                <div class="col-md-12 section-title center">
+{{--            <!-- SECTION TITLE -->--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12 section-title center">--}}
 
-                    <!-- Title -->
-                    <h2 class="h2-xs darkblue-color">What Our Clients Say</h2>
+{{--                    <!-- Title -->--}}
+{{--                    <h2 class="h2-xs darkblue-color">What Our Clients Say</h2>--}}
 
-                    <!-- Text -->
-                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,
-                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
-                    </p>
+{{--                    <!-- Text -->--}}
+{{--                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,--}}
+{{--                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa--}}
+{{--                    </p>--}}
 
-                </div>
-            </div>	 <!-- END SECTION TITLE -->
+{{--                </div>--}}
+{{--            </div>	 <!-- END SECTION TITLE -->--}}
 
 
-            <!-- TESTIMONIALS CONTENT -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme reviews-holder">
+{{--            <!-- TESTIMONIALS CONTENT -->--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12">--}}
+{{--                    <div class="owl-carousel owl-theme reviews-holder">--}}
 
 
-                        <!-- TESTIMONIAL #1 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #1 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>Sagittis congue etiam sapien at velna accumsan suscipit egestas at lobortis magna, a
-                                porttitor sodales an aenean mauris tempor aenean cubilia blandit porta justo integer
-                                velna vitae auctor integer a congue magna sapien gravida donec ultrice ligula risus
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>Sagittis congue etiam sapien at velna accumsan suscipit egestas at lobortis magna, a--}}
+{{--                                porttitor sodales an aenean mauris tempor aenean cubilia blandit porta justo integer--}}
+{{--                                velna vitae auctor integer a congue magna sapien gravida donec ultrice ligula risus--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-1.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-1.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Robert</h5>
-                                    <span>(UK Business Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Robert</h5>--}}
+{{--                                    <span>(UK Business Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                        <!-- TESTIMONIAL #2 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #2 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>Sapien sem accumsan vitae at purus diam integer congue magna sodales. Magna vitae and aenean
-                                mauris tempor augue in cubilia laoreet magna suscipit magna ipsum vitae purus ipsum primis
-                                cubilia laoreet and augue ultrice ligula egestas magna suscipit lectus gestas at magna viverra
-                                dolor neque gravida
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>Sapien sem accumsan vitae at purus diam integer congue magna sodales. Magna vitae and aenean--}}
+{{--                                mauris tempor augue in cubilia laoreet magna suscipit magna ipsum vitae purus ipsum primis--}}
+{{--                                cubilia laoreet and augue ultrice ligula egestas magna suscipit lectus gestas at magna viverra--}}
+{{--                                dolor neque gravida--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-2.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-2.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Evelyn W.</h5>
-                                    <span>(Canada Studients Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Evelyn W.</h5>--}}
+{{--                                    <span>(Canada Studients Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                        <!-- TESTIMONIAL #3 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #3 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>Etiam sapien gravida and donec sagittis congue. An augue cubilia laoreet magna suscipit egestas
-                                magna ipsum and vitae purus ipsum primis undo cubilia laoreet augue ultrice ligula and egestas
-                                suscipit  magna lectus gestas magna as viverra dolor neque est gravida
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>Etiam sapien gravida and donec sagittis congue. An augue cubilia laoreet magna suscipit egestas--}}
+{{--                                magna ipsum and vitae purus ipsum primis undo cubilia laoreet augue ultrice ligula and egestas--}}
+{{--                                suscipit  magna lectus gestas magna as viverra dolor neque est gravida--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-3.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-3.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Leslie Serpas</h5>
-                                    <span>(Singapore PR Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Leslie Serpas</h5>--}}
+{{--                                    <span>(Singapore PR Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                        <!-- TESTIMONIAL #4 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #4 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>An augue in cubilia laoreet undo magna suscipit egestas magna ipsum egestas vitae purus ipsum
-                                primis cubilia laoreet augue ultrice ligula egestas and magna suscipit lectus gestas magna a
-                                viverra dolor neque est gravida
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>An augue in cubilia laoreet undo magna suscipit egestas magna ipsum egestas vitae purus ipsum--}}
+{{--                                primis cubilia laoreet augue ultrice ligula egestas and magna suscipit lectus gestas magna a--}}
+{{--                                viverra dolor neque est gravida--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-4.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-4.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Dan Hodges</h5>
-                                    <span>(USA Studients Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Dan Hodges</h5>--}}
+{{--                                    <span>(USA Studients Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                        <!-- TESTIMONIAL #5 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #5 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>An orci nullam tempor sapien, gravida donec enim ipsum a porta. An augue in cubilia laoreet
-                                magna suscipit egestas magna ipsum vitae purus ipsum primis in cubilia laoreet augue ultrice
-                                at ligula egestas magna suscipit lectus gestas magna viverra dolor neque est gravida justo
-                                integer and velna auctor
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>An orci nullam tempor sapien, gravida donec enim ipsum a porta. An augue in cubilia laoreet--}}
+{{--                                magna suscipit egestas magna ipsum vitae purus ipsum primis in cubilia laoreet augue ultrice--}}
+{{--                                at ligula egestas magna suscipit lectus gestas magna viverra dolor neque est gravida justo--}}
+{{--                                integer and velna auctor--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-5.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-5.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Amelie Peterson</h5>
-                                    <span>(France Working Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Amelie Peterson</h5>--}}
+{{--                                    <span>(France Working Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                        <!-- TESTIMONIAL #6 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #6 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>An augue cubilia laoreet magna suscipit egestas magna ipsum vitae purus undo ipsum primis
-                                in cubilia laoreet augue ultrice ligula egestas magna at suscipit lectus gestas magna viverra
-                                dolor neque est gravida. Mauris donec ociis magnis sapien etiam sapien sem sagittis
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>An augue cubilia laoreet magna suscipit egestas magna ipsum vitae purus undo ipsum primis--}}
+{{--                                in cubilia laoreet augue ultrice ligula egestas magna at suscipit lectus gestas magna viverra--}}
+{{--                                dolor neque est gravida. Mauris donec ociis magnis sapien etiam sapien sem sagittis--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-6.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-6.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Scott Boxer</h5>
-                                    <span>(Germany Travel Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Scott Boxer</h5>--}}
+{{--                                    <span>(Germany Travel Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                        <!-- TESTIMONIAL #7 -->
-                        <div class="review-1">
+{{--                        <!-- TESTIMONIAL #7 -->--}}
+{{--                        <div class="review-1">--}}
 
-                            <!-- Testimonial Text -->
-                            <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
-                                laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna auctor.
-                                An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus ipsum primis
-                                cubilia laoreet augue ultrice ligula egestas
-                            </p>
+{{--                            <!-- Testimonial Text -->--}}
+{{--                            <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia--}}
+{{--                                laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna auctor.--}}
+{{--                                An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus ipsum primis--}}
+{{--                                cubilia laoreet augue ultrice ligula egestas--}}
+{{--                            </p>--}}
 
-                            <!-- Testimonial Author -->
-                            <div class="author-data clearfix">
+{{--                            <!-- Testimonial Author -->--}}
+{{--                            <div class="author-data clearfix">--}}
 
-                                <!-- Author Avatar -->
-                                <div class="testimonial-avatar">
-                                    <img src="images/review-author-7.jpg" alt="testimonial-avatar">
-                                </div>
+{{--                                <!-- Author Avatar -->--}}
+{{--                                <div class="testimonial-avatar">--}}
+{{--                                    <img src="images/review-author-7.jpg" alt="testimonial-avatar">--}}
+{{--                                </div>--}}
 
-                                <!-- Author Data -->
-                                <div class="review-author">
-                                    <h5 class="h5-xs darkblue-color">Evelyn</h5>
-                                    <span>(Austrlia PR Visa)</span>
-                                </div>
+{{--                                <!-- Author Data -->--}}
+{{--                                <div class="review-author">--}}
+{{--                                    <h5 class="h5-xs darkblue-color">Evelyn</h5>--}}
+{{--                                    <span>(Austrlia PR Visa)</span>--}}
+{{--                                </div>--}}
 
-                            </div>	<!-- End Testimonial Author -->
+{{--                            </div>	<!-- End Testimonial Author -->--}}
 
-                        </div>
+{{--                        </div>--}}
 
 
-                    </div>
-                </div>
-            </div>	<!-- END TESTIMONIALS CONTENT -->
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>	<!-- END TESTIMONIALS CONTENT -->--}}
 
 
-        </div>	   <!-- End container -->
-    </section>	 <!-- END TESTIMONIALS-1 -->
+{{--        </div>	   <!-- End container -->--}}
+{{--    </section>	 <!-- END TESTIMONIALS-1 -->--}}
 
 
 
 
     <!-- BRANDS-2
     ============================================= -->
-    <div id="brands-2" class="bg-tra-map bg-lightgrey wide-70 brands-section division">
-        <div class="container">
+{{--    <div id="brands-2" class="bg-tra-map bg-lightgrey wide-70 brands-section division">--}}
+{{--        <div class="container">--}}
 
 
-            <!-- TEXT -->
-            <div class="row">
-                <div class="col-md-12 text-center mb-10">
-                    <h5 class="h5-md grey-color">We partner with companies of all sizes, all around the world</h5>
-                </div>
-            </div>
+{{--            <!-- TEXT -->--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12 text-center mb-10">--}}
+{{--                    <h5 class="h5-md grey-color">We partner with companies of all sizes, all around the world</h5>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
 
-            <!-- BRANDS HOLDER -->
-            <div class="row brands-holder">
+{{--            <!-- BRANDS HOLDER -->--}}
+{{--            <div class="row brands-holder">--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-1.png" alt="brand-logo" />
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-1.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" />
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-2.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-3.png" alt="brand-logo" />
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-3.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-4.png" alt="brand-logo" />
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-4.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-5.png" alt="brand-logo">
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-5.png" alt="brand-logo">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-6.png" alt="brand-logo" />
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-6.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-7.png" alt="brand-logo" />
-                    </div>
-                </div>
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-7.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!-- BRAND LOGO IMAGE -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="brand-logo">
-                        <img class="img-fluid" src="images/brand-8.png" alt="brand-logo" />
-                    </div>
-                </div>
-
-
-            </div>	<!-- END BRANDS HOLDER -->
+{{--                <!-- BRAND LOGO IMAGE -->--}}
+{{--                <div class="col-sm-6 col-md-3">--}}
+{{--                    <div class="brand-logo">--}}
+{{--                        <img class="img-fluid" src="images/brand-8.png" alt="brand-logo" />--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
 
-        </div>     <!-- End container -->
-    </div>	<!-- END BRANDS-2 -->
+{{--            </div>	<!-- END BRANDS HOLDER -->--}}
+
+
+{{--        </div>     <!-- End container -->--}}
+{{--    </div>	<!-- END BRANDS-2 -->--}}
 
 
 
