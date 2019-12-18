@@ -10,7 +10,7 @@
 
                 <h3>
 
-                    <router-link :to="{ name: 'home' }" class="current"><img src="{{ asset('images/logo-black.png') }}" width="150" height="62" alt="Migration Master">
+                    <router-link :to="{ name: 'home' }" class="current"><img src="/images/logo-black.png" width="150" height="62" alt="Migration Master">
                     </router-link></h3>
 
                 </div>

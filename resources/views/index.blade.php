@@ -53,16 +53,13 @@
                     @guest
                         <consultation-form></consultation-form>
                     @else
-                        <a href="{{ route('dashboard') }}" class="header-btn btn-primary tra-black-hover last-link">DashBoard</a>
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
+                        <div data-v-86e98a50="" role="alert" class="  spacing" >
+                            <span class="darkblue-color">Ready for take off?</span>
+                            <iframe id="cover-video" src="https://player.vimeo.com/video/324214320?api=1&amp;background=1&amp;mute=0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true" frameborder="0"></iframe>
+                            <span class="darkblue-color">
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
+           </span>
+                        </div>
                     @endguest
                 </div>	<!-- END HERO REQUEST FORM -->
 

@@ -116,6 +116,23 @@
 
                     <!-- Infotmation -->
                     <div class="headertopleft">
+
+                        @guest
+                           welcome geust
+                        @else
+{{--                            <a href="{{ route('dashboard') }}" class="header-btn btn-primary tra-black-hover last-link">DashBoard</a>--}}
+{{--                           --}}
+                       Hi {{{ Auth::user()->name }}},
+                            <a class="header-btn btn-primary tra-black-hover last-link" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        @endguest
 {{--                        <div class="header-info clearfix">--}}
 {{--                            <span class="txt-400"><i class="fas fa-map-marker-alt"></i>121 King St, Melbourne, Victoria 3000</span>--}}
 {{--                        </div>--}}

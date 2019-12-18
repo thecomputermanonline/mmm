@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('fonts/stylesheet.css') }}" type="text/css" charset="utf-8" />
     <link media="all" href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link media="all" href="{{ asset('css/main.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('css/red.css') }}" rel="stylesheet">--}}
 
 
 </head>
@@ -28,7 +29,7 @@
                     <img src="{{ asset('images/logo-black.png') }}" alt="Migration Masters">
                 </a>
             </div>
-fffff
+
             <h4>@yield('auth-header')</h4>
         </div>
 
