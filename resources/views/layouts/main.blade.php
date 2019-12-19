@@ -118,7 +118,7 @@
                     <div class="headertopleft">
 
                         @guest
-                           welcome geust
+                           Welcome guest
                         @else
 {{--                            <a href="{{ route('dashboard') }}" class="header-btn btn-primary tra-black-hover last-link">DashBoard</a>--}}
 {{--                           --}}

@@ -39,7 +39,7 @@
                 <router-link :to="{ name: 'board' }" class="dropdown-item" > My Applications</router-link>
                 <router-link :to="{ name: 'stories' }" class="dropdown-item" > My Stories</router-link>
 
-                <a class="dropdown-item" href="/billing">My Plans</a>
+<!--                <a class="dropdown-item" href="/billing">My Plans</a>-->
 
                 <a class="dropdown-item" href="/my-account">My Account</a>
                 <a class="dropdown-item" href="/"

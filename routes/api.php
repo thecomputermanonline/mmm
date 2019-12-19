@@ -22,13 +22,13 @@ Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
 Route::post('login', 'UserController@login');
 //Route::post('/logout', 'UserController@logout');
 //Route::post('register', 'UserController@register');
-
+Route::resource('/task', 'TaskController');
+Route::resource('/category', 'CategoryController');
+Route::get('/category/{category}/tasks', 'CategoryController@tasks');
+Route::get('/logout', 'UserController@logout');
+Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
 Route::group(['middleware' => 'auth:api'], function(){
-    Route::resource('/task', 'TaskController');
-    Route::resource('/category', 'CategoryController');
-    Route::get('/category/{category}/tasks', 'CategoryController@tasks');
-    Route::get('/logout', 'UserController@logout');
-    Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
+
 });
 
 

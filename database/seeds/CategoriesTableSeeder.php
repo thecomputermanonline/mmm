@@ -15,7 +15,17 @@ class CategoriesTableSeeder extends Seeder
         $categories = ['Ideas', 'On Going', 'Completed'];
 
         foreach ($categories as $category) {
-            Category::create(['name' => $category]);
+            Category::create([
+
+                'name' => $category,
+                      'order' => 1,
+                    'slug' => '1',
+                    'color' => '1',
+
+                ]
+
+
+            );
         }
     }
 }

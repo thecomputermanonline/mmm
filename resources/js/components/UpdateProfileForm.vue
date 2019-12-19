@@ -168,7 +168,7 @@
                             </div>
 
                             <div class="btn-con">
-                                <button class="btn full" type="submit" :disabled="errors.any()">Update</button>
+                                <button class="btn " type="submit" :disabled="errors.any()">Update</button>
                             </div>
                         </form>
 

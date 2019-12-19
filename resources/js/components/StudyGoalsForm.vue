@@ -220,7 +220,7 @@
             </div>
         </div>
         <div class="text-right mt-4">
-            <button  class="button btn full" :disabled="errors.any()">Save</button>
+            <button  class="button btn" :disabled="errors.any()">Save</button>
         </div>
     </form>
 

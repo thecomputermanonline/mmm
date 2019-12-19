@@ -18,7 +18,7 @@
             <span class="help is-danger" v-text="errors.get('budget')"></span>
         </div>
         <div class="btn-container">
-            <button class="btn full btn-block" :disabled="errors.any()" >Save Details</button>
+            <button class="btn  btn-block" :disabled="errors.any()" >Save Details</button>
         </div>
     </form>
 </section>

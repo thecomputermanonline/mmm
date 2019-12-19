@@ -1,9 +1,10 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
+            empty
             <draggable element="div" class="col-md-12" v-model="categories" :options="dragOptions">
                 <transition-group class="row">
-                    <div class="col-md-4" v-for="element,index in categories" :key="element.id">
+                    <div class="col-md-4" v-for="element, index in categories" :key="element.id">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">{{element.name}}</h4>
@@ -66,7 +67,6 @@
                 let task_id = data.item.id
                 let category_id = fromTask.id == toTask.id ? null : toTask.id
                 let order = data.newIndex == data.oldIndex ? false : data.newIndex
-
                 if (order !== false) {
                     axios.patch(`api/task/${task_id}`, {order, category_id}).then(response => {
                         // Do anything you want here
@@ -85,10 +85,10 @@
             }
         },
         mounted() {
-            let token = localStorage.getItem('jwt')
-
-            axios.defaults.headers.common['Content-Type'] = 'application/json'
-            axios.defaults.headers.common['Authorization'] = 'Bearer ' + token
+            // let token = localStorage.getItem('jwt')
+            //
+            // axios.defaults.headers.common['Content-Type'] = 'application/json'
+            // axios.defaults.headers.common['Authorization'] = 'Bearer ' + token
 
             axios.get('api/category').then(response => {
                 response.data.forEach((data) => {
@@ -111,13 +111,13 @@
                 };
             },
         },
-        beforeRouteEnter (to, from, next) {
-            if ( ! localStorage.getItem('jwt')) {
-                return next('login')
-            }
-
-            next()
-        }
+        // beforeRouteEnter (to, from, next) {
+        //     if ( ! localStorage.getItem('jwt')) {
+        //         return next('login')
+        //     }
+        //
+        //     next()
+        // }
     }
 </script>
 
