@@ -15,7 +15,7 @@ class CreateUserStudyGoalsTable extends Migration
     {
         Schema::create('user_study_goals', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('study');
             $table->string('subject');
             $table->string('destination');

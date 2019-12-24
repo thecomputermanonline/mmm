@@ -19,7 +19,8 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'phone'
+        'name', 'email', 'password', 'phone','visa_for'
+
     ];
 
     /**
@@ -43,7 +44,35 @@ class User extends Authenticatable implements MustVerifyEmail
     public function tasks(){
         return $this->hasMany(Task::class);
     }
-    public function roles() {
-        return $this->belongsToMany(Role::class,'users_roles');
+//    public function roles() {
+//        return $this->hasOne(Role::class,'role_id');
+//    }
+
+    public function userProfile() {
+        return $this->hasOne(UserProfile::class,'user_id');
+    }
+
+    public function userEducation() {
+        return $this->hasOne(UserEducation::class,'user_id');
+    }
+
+    public function userWork() {
+        return $this->hasOne(UserWork::class,'user_id');
+    }
+    public function userEducationHistory() {
+        return $this->hasMany(UserEducationHistory::class,'user_id');
+    }
+
+    public function userWorkExperience() {
+        return $this->hasMany(UserWorkExperience::class,'user_id');
+    }
+    public function userDependants() {
+        return $this->hasMany(UserDependant::class,'user_id');
+    }
+    public function userFinancialPlan() {
+        return $this->hasOne(UserFinancialPlan::class,'user_id');
+    }
+    public function userBackgroundInfo() {
+        return $this->hasOne(UserBackgroundInfo::class,'user_id');
     }
 }

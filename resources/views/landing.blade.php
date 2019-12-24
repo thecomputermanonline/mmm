@@ -20,7 +20,7 @@
 
 <div id="app">
 
-    <app></app>
+    <app name="{{$success['name']}}" token="{{$success['token']}}"></app>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="{{ mix('js/app.js') }}"></script>

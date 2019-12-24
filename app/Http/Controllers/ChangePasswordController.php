@@ -87,5 +87,24 @@ class ChangePasswordController extends Controller
         dd('Password change successfully.');
 
     }
+    function changePassword(Request $request){
+
+
+        if($request->oldpassword == $request->user()->password) {
+
+
+            $this->validate($request, [
+                'password' => 'required|min:8|confirmed',
+                //'password' => 'min:6|confirmed',
+
+            ]);
+
+            $request->user()->password = bcrypt($request->password);
+
+        }else{
+
+        }
+
+    }
 
 }

@@ -42,15 +42,8 @@
 <!--                <a class="dropdown-item" href="/billing">My Plans</a>-->
 
                 <a class="dropdown-item" href="/my-account">My Account</a>
-                <a class="dropdown-item" href="/"
-                   onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-Logout
-                </a>
 
-                <form id="logout-form" :action="logout"   style="display: none;">
-                    @csrf
-                </form>
+                           <a id="logout-link" href="#" @click.prevent="logout">Logout</a>
 
 
             </div>
@@ -63,18 +56,7 @@ Logout
         name: "ProfileMenu",
         data(){
             return{
-                showDropDown: true,
-                links: [
-                    {
-                        name: "Account"
-                    },
-                    {
-                        name: "Profile"
-                    },
-                    {
-                        name: "Logout"
-                    }
-                ],
+
                 name: 'john doe',
                 avatar: 'images/header/profile_ic.jpg',
                 role: '',
@@ -84,26 +66,67 @@ Logout
             }
 
         },
-        methods:{
-            logout(){
-                axios.post('/logout').then(response => {
-alert("res");
-                    localStorage.clear()
-                        //.setItem('user',response.data.success.name)
-                    //localStorage.setItem('jwt',response.data.success.token)
-                    this.$router.go('/login')
-                    if (localStorage.getItem('jwt') == null){
-
-                    }
-
-            //});
-        })
+       // methods:{
+//             logout(){
+//                 axios.post('/logout').then(response => {
+// alert("res");
+//                     localStorage.clear()
+//                         //.setItem('user',response.data.success.name)
+//                     //localStorage.setItem('jwt',response.data.success.token)
+//                     this.$router.go('/login')
+//                     if (localStorage.getItem('jwt') == null){
+//
+//                     }
+//
+//             //});
+//         })
+//             }
+//         },
+//         // created() {
+//         //     this.getUserProfile();
+         //},
+        data(){
+            return {
+                isLoggedIn : null,
+                name : null
             }
         },
-        // created() {
-        //     this.getUserProfile();
-        // },
+        mounted(){
+            this.isLoggedIn = localStorage.getItem('jwt')
+            this.name = localStorage.getItem('user')
+        },
+        methods: {
+            logout(evt) {
+                if(confirm("Are you sure you want to log out?")) {
 
+                    axios.post('/logout', evt ).then(response => {
+                        alert('failes');
+                        localStorage.removeItem('auth_token');
+
+                        // remove any other authenticated user data you put in local storage
+
+                        // Assuming that you set this earlier for subsequent Ajax request at some point like so:
+                        // axios.defaults.headers.common['Authorization'] = 'Bearer ' + auth_token ;
+                        delete axios.defaults.headers.common['Authorization'];
+
+                        // If using 'vue-router' redirect to login page
+                        this.$router.go('/login');
+                    })
+                        .catch(error => {
+
+                            // If the api request failed then you still might want to remove
+                            // the same data from localStorage anyways
+                            // perhaps this code should go in a finally method instead of then and catch
+                            // methods to avoid duplication.
+                            localStorage.removeItem('auth_token');
+                            delete axios.defaults.headers.common['Authorization'];
+                            alert('fail')
+                            //this.$router.go('/login');
+                            this.$router.go('/')
+                        });
+                }
+            }
+        }
     }
 </script>
 

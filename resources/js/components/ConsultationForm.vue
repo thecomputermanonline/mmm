@@ -8,8 +8,8 @@
                 <flash message=""></flash>
                 <h5 class="h5-lg">Start by Requesting Consultation</h5>
             </div>
-            <input type="hidden" id="user_role" name="user_role" v-model="name" value="Client">
-            <!-- Request Form Input -->
+<!--            <input type="hidden" id="user_role" name="user_role" v-model="name" value="Client">-->
+<!--            &lt;!&ndash; Request Form Input &ndash;&gt;-->
             <div id="input-name" class="col-md-12">
                 <input type="text" v-model="name" name="name" class="form-control name" placeholder="Enter Your Name*" >
                 <span class="alert-danger" v-text="errors.get('name')"></span>
@@ -107,7 +107,7 @@
                     email:'',
                     phone:'',
                     visa_for:'',
-                user_role:'Client',
+                // user_role:'Client',
                     errors: new Errors(),
                 submitted:false,
             }

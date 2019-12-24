@@ -20,7 +20,7 @@ class CreateUserTestimonialsTable extends Migration
             $table->text('make_public');
             $table->string('rate_us')->default('3');
             $table->text('body');
-            $table->integer('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->boolean('isPublished')->default(false);
             $table->timestamps();
         });

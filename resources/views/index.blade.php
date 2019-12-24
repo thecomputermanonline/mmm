@@ -111,7 +111,7 @@
                             <!-- Text -->
                             <div class="sbox-4-txt">
                                 <h5 class="h5-md">Education Visa</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <p>We are there to help you enrol at a qualified educational institution and obtain your student visa in any country of your choice.</p>
                             </div>
 
                         </a>
@@ -130,7 +130,7 @@
                             <!-- Text -->
                             <div class="sbox-4-txt">
                                 <h5 class="h5-md">Job Seeker Visa</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <p>This type of visa allows you to work in a certain country of your choice through a specific period of time and we are here to ensure that you collect this visa and simplify the process for obtaining it.</p>
                             </div>
 
                         </a>
@@ -149,7 +149,7 @@
                             <!-- Text -->
                             <div class="sbox-4-txt">
                                 <h5 class="h5-md">Business Visa</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <p>This is a short term visa for business negotiations, discussions/presentations and our job is to assist you obtain it in case you are looking to travel abroad for a business trip.</p>
                             </div>
 
                         </a>
@@ -168,7 +168,7 @@
                             <!-- Text -->
                             <div class="sbox-4-txt">
                                 <h5 class="h5-md">PR Visa</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <p>Our organization is there to assist you when looking for a permanent residential visa, which will allow you to live and work in any country of your choice on a permanent basis.</p>
                             </div>
 
                         </a>
@@ -187,7 +187,7 @@
                             <!-- Text -->
                             <div class="sbox-4-txt">
                                 <h5 class="h5-md">Tourist & Visitor Visa</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <p>If you’re looking to have a good time abroad, then migration masters is the right agency for you, we are here to ensure that your tourist visa is processed on time and your journey is safe.</p>
                             </div>
 
                         </a>
@@ -206,7 +206,7 @@
                             <!-- Text -->
                             <div class="sbox-4-txt">
                                 <h5 class="h5-md">Immigration Consult</h5>
-                                <p>Porta semper lacus cursus a feugiat primis an ultrice dolor undo congue placerat</p>
+                                <p>Our Company has consultants who would advise and assist you on emigrating from one country to another through legal and documentation process, to increase the chances of immigration for study, work, travel or business purpose.</p>
                             </div>
 
                         </a>
@@ -248,9 +248,7 @@
                         <!-- Text #1 -->
                         <div class="box-list">
                             <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
-                            <p>Fringilla risus nec, luctus mauris orci auctor purus euismod pretium purus at pretium
-                                ligula rutrum viverra tortor sapien sodales pretium purus pretium. An magnis nulla
-                                dolor sapien augue  erat iaculis
+                            <p>Our Company has a team of highly qualified and experienced consultants who have worked, studied and lived abroad, these consultants have travelled from time to time and they would love to advise and assist you according to their live experience on emigrating from country to country, through legal documentation process and to increase the chances of immigration for study, work, travel or business purpose.
                             </p>
                         </div>
 

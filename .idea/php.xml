@@ -107,6 +107,7 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/vansteen/laravel-sendinblue" />
       <path value="$PROJECT_DIR$/vendor/sendinblue/api-v3-sdk" />
+      <path value="$PROJECT_DIR$/vendor/igaster/laravel_cities" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

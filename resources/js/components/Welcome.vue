@@ -17,7 +17,8 @@
 <script>
     import Profile from "./Profile";
     export default {
-        components: {Profile}
+        components: {Profile},
+
     }
 </script>
 

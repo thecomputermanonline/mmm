@@ -228,7 +228,7 @@
             </div>
         </div>
         <div class="text-right mt-4">
-            <button  class="button btn" :disabled="errors.any()">Save</button>
+            <button  class="button btn1" :disabled="errors.any()">Save</button>
         </div>
     </form>
 </template>

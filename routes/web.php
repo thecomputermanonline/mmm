@@ -61,7 +61,8 @@ Route::get('/articles', 'ArticlesController@index') ;
 Route::get('/articles/{article}', 'ArticlesController@show') ;
 
 
-
+Route::post('/store-dependant', 'UserDependantsController@store')->name('store_dependants');
+Route::post('/store-finsup', 'UserFinancialPlanController@store')->name('store_finsup');
 Route::post('reset_password_without_token', 'UserController@validatePasswordRequest');
 Route::post('reset_password_with_token', 'UserController@resetPassword');
 
@@ -72,7 +73,7 @@ Route::post('/contact', 'MailController@contact')->name('contact');
 
 Route::get('/threads', 'ThreadsController@index')->name('index');
 Route::get('/threads/{thread}', 'ThreadsController@show')->name('show');
-
+Route::post('/userProfileUpdate', 'UserProfileController@userProfileUpdate')->name('updateUserProfile');
 
 Auth::routes(['verify' => true]);
 Route::get('/', 'HomeController@index')->name('home');
@@ -80,3 +81,4 @@ Route::get('/dashboard', 'SinglePageController@index')->where('any', '.*')->name
 Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
 
 
+//Route::post('/userProfileUpdate', 'UserProfileController@userProfileUpdate')->name('updateUserProfile');

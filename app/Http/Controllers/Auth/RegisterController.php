@@ -57,7 +57,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'phone' => 'required|string|min:8',
             'visa_for' => 'required',
-            'user_role' => ['required', 'string', 'max:10'],
+           // 'user_role' => ['required', 'string', 'max:10'],
           //  'password' => ['required', 'string', 'min:8', 'confirmed'],
 
         ]);
@@ -80,8 +80,8 @@ class RegisterController extends Controller
             //'role' => $data['role'],
             'password' => Hash::make($password),
         ]);
-        $role = Role::where('name', '=', $data['user_role'])->first();
-        $user->roles()->attach($role);
+       // $role = Role::where('name', '=', $data['user_role'])->first();
+      //  $user->roles()->attach($role);
         return $user;
     }
 

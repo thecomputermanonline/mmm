@@ -26,15 +26,15 @@
 <!--                            <router-link :to="{ name: 'register' }" class="nav-link" v-if="!isLoggedIn">Register</router-link>-->
                             <router-link :to="{ name: 'home' }" class="current">How it works</router-link>
 
-                            <router-link :to="{ name: 'home' }" class="current" v-if="isLoggedIn">DashBoard</router-link>
-                            <li v-if="isLoggedIn">
-                                <a>
-                                Hi, {{name}}
-                                </a>
-                            </li>
-                            <li v-if="isLoggedIn">
-                                <a id="logout-link" href="#" @click.prevent="logout">Logout</a>
-                            </li>
+<!--                            <router-link :to="{ name: 'home' }" class="current" v-if="isLoggedIn">DashBoard</router-link>-->
+<!--                            <li v-if="isLoggedIn">-->
+<!--                                <a>-->
+<!--                                Hi, {{name}}-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li v-if="isLoggedIn">-->
+<!--                                <a id="logout-link" href="#" @click.prevent="logout">Logout</a>-->
+<!--                            </li>-->
 
                         </ul>
                     </nav>
@@ -78,6 +78,7 @@
     import ProfileMenu from './ProfileMenu'
     export default {
         components: {ProfileMenu},
+        props: ['name', 'token'],
         data(){
             return {
                 isLoggedIn : null,
@@ -85,6 +86,12 @@
             }
         },
         mounted(){
+            localStorage.setItem('user',this.name)
+            localStorage.setItem('jwt',this.token)
+
+            // if (localStorage.getItem('jwt') != null){
+            //     this.$router.go('/board')
+            // }
             this.isLoggedIn = localStorage.getItem('jwt')
             this.name = localStorage.getItem('user')
         },
@@ -92,7 +99,7 @@
             logout(evt) {
                 if(confirm("Are you sure you want to log out?")) {
 
-                    axios.post('/api/logout', evt ).then(response => {
+                    axios.post('/logout', evt ).then(response => {
                         alert('failes');
                         localStorage.removeItem('auth_token');
 

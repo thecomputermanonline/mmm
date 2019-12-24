@@ -1,7 +1,6 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            empty
             <draggable element="div" class="col-md-12" v-model="categories" :options="dragOptions">
                 <transition-group class="row">
                     <div class="col-md-4" v-for="element, index in categories" :key="element.id">

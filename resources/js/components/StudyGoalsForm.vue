@@ -1,10 +1,11 @@
 <template>
+    <div>
     <form class="interest-form" method="post" action="/store-study-goals" @submit.prevent="onSubmit" @change="errors.clear($event.target.name)">
 
         <h2>My Goals</h2>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="study">What are you intending to study?</label>
+                <label for="study">Have you got an offer of admission ?</label>
                 <select v-model="study" name ="study"  class="custom-select" id="study" @change="errors.clear('study')">
                     <option selected>Please select</option>
                     <option value="1">One</option>
@@ -14,7 +15,7 @@
                 <span class="help is-danger" v-text="errors.get('study')"></span>
             </div>
             <div class="form-group col-md-6">
-                <label for="when">When are you expecting to study abroad?</label>
+                <label for="when">Which school?</label>
                 <select v-model="when" name ="when" class="custom-select" id="when" @change="errors.clear('when')">
                     <option selected>Please select</option>>
                     <option value="1">One</option>
@@ -27,19 +28,19 @@
         </div>
         <div class="form-row mb-5">
             <div class="form-group mb-md-0 col-md-6">
-                <label for="subject">Which subject(s) are you intending to study?</label>
+                <label for="subject">Which course</label>
                 <input v-model="subject" name="subject" id="subject"  class="form-control" type="text" placeholder="Enter your subjects" >
                 <span class="help is-danger" v-text="errors.get('subject')"></span>
             </div>
 
             <div class="form-group mb-0 col-md-6">
-                <label for="destination">specify your study destination(S) (up to three)</label>
+                <label for="destination">starting date?</label>
                 <input v-model="destination"  name ="destination" id="destination" class="form-control" type="text" placeholder="Enter study destination(s)">
                 <span class="help is-danger" v-text="errors.get('destination')"></span>
             </div>
         </div>
 
-        <h2>My Future Plans</h2>
+        <h2>Have you taken any of the following tests?</h2>
 
         <span class="sub-title">A. English proficiency test</span>
         <span class="help is-danger" v-text="errors.get('language')"></span>
@@ -188,45 +189,18 @@
         </ul>
 
 
-        <h2>My Background</h2>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="education">What is your current/highest education level?</label>
-                <select  class="custom-select" id="education" v-model="education" @change="errors.clear('education')">
-                    <option selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <span class="help is-danger" v-text="errors.get('education')"></span>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="recentinstitution">What is your current or most recent institution?</label>
-                <input id="recentinstitution" name="recentinstitution" v-model="recentinstitution" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
-                <span class="help is-danger" v-text="errors.get('recentinstitution')"></span>
-            </div>
-        </div>
-        <div class="form-row">
 
-            <div class="form-group col-md-6">
-                <label for="grade">What was your average score/achievement at this level?</label>
-                <input id="grade" name="grade" v-model="grade" class="form-control" type="text" placeholder="Enter GPA score">
-                <span class="help is-danger" v-text="errors.get('grade')"></span>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="recentmajorprogramme">What is your current or most recent major/programme?</label>
-                <input name="recentmajorprogramme" id="recentmajorprogramme" v-model="recentmajorprogramme" class="form-control" type="text" placeholder="Example: law">
-                <span class="help is-danger" v-text="errors.get('recentmajorprogramme')"></span>
-            </div>
-        </div>
         <div class="text-right mt-4">
             <button  class="button btn" :disabled="errors.any()">Save</button>
         </div>
     </form>
-
+    <education-history-form></education-history-form>
+</div>
 </template>
 
 <script>
+
+
     class Errors{
         constructor(){
 
@@ -249,6 +223,7 @@
         }
     }
     export default {
+       // components: {EducationHistoryForm},
         //props: ['study_goals'],
         data() {
 
@@ -260,10 +235,7 @@
                         undergraduate: [],
                         language: [],
                         postgraduate: [],
-                        education: '',
-                        grade: '',
-                        recentmajorprogramme: '',
-                        recentinstitution: '',
+
                         errors: new Errors(),
 
             }
@@ -312,10 +284,10 @@
                     this.language = response.data.language.split(',');
                     this.undergraduate = response.data.undergraduate.split(',');;
                     this.postgraduate = response.data.postgraduate.split(',');;
-                    this.education = response.data.education;
-                    this.grade = response.data.grade;
-                    this.recentmajorprogramme = response.data.recentmajorprogramme;
-                    this.recentinstitution = response.data.recentinstitution;
+                    // this.education = response.data.education;
+                    // this.grade = response.data.grade;
+                    // this.recentmajorprogramme = response.data.recentmajorprogramme;
+                    // this.recentinstitution = response.data.recentinstitution;
 
                 });
             },

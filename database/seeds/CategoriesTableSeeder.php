@@ -12,7 +12,7 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         //
-        $categories = ['Ideas', 'On Going', 'Completed'];
+        $categories = ['Submitted', 'On Going', 'Completed'];
 
         foreach ($categories as $category) {
             Category::create([

@@ -3,8 +3,8 @@
     <strong class="heading d-block">My Financial Plan</strong>
     <form class="interest-form" method="post" action="/store-finsup" @submit.prevent="onSubmit" @change="errors.clear($event.target.name)">
         <div class="form-group">
-            <label for="finsup">Financial Support</label>
-            <select v-model="finsup"  name="finsup" class="custom-select" id="finsup">
+            <label for="sponsor">Financial Support</label>
+            <select v-model="sponsor"  name="sponsor" class="custom-select" id="sponsor">
                 <option selected>Please select</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -52,7 +52,7 @@
         data() {
 
             return {
-                finsup:'',
+                sponsor:'',
                 budget:'',
                 errors: new Errors(),
 
@@ -63,16 +63,7 @@
 
                 axios.post('/store-finsup', this.$data)
                     .then(response => {
-                        // this.study = response.data.study;
-                        // this.subject = response.data.subject;
-                        // this.destination = response.data.destination;
-                        // this.when = response.data.when;
-                        // this.undergraduate = response.data.undergraduate;
-                        // this.language = response.data.language;
-                        // this.undergraduate = response.data.undergraduate;
-                        // this.postgraduate = response.data.postgraduate;
-                        // this.education = response.data.education;
-                        // this.grade = response.data.grade;
+
                         // this.recentmajorprogramme = response.data.recentmajorprogramme;
                         // this.recentinstitution = response.data.recentinstitution;
                         flash('Your Financial Support has been updated.', 'success');
@@ -105,10 +96,6 @@
             this.getFinSup();
         },
     }
-
-
-
-
 </script>
 
 

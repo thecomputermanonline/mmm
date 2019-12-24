@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\UserProfile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\User;
-use App\Http\Requests\EditUserRequest;
 class UserProfileController extends Controller
 {
     //
@@ -19,33 +19,16 @@ class UserProfileController extends Controller
     {
         return Auth::user();
     }
-
+    public function getUserProfile()
+    {
+        $user = $this->getAuthUser();
+        return $user->userProfile;
+    }
     public function updateAuthUser (Request $request)
     {
 
-
-        //$user = User::find(Auth::id());
         $user = Auth::user();
 
-//        if($request->hasFile('avatar')){
-//
-//            $this->validate($request,[
-//
-//                'avatar' =>  'mimes:png',
-//
-//            ]);
-//
-//
-//        }
-        $this->validate(request(),[
-            //'avatar' =>  'mimes:png',
-          'fname' => 'required|string',
-           'lname' => 'required|string',
-            'country' => 'required|string',
-//            'state' => 'required|string',
-//            'gender' => 'required|string',
-            'email' => 'required|email|unique:users,email,' . Auth::id()
-        ]);
 
             if (isset($request['avatar'])) {
                 $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
@@ -56,6 +39,7 @@ class UserProfileController extends Controller
             $user->state = $request->state;
             $user->gender = $request->gender;
             $user->email = $request->email;
+
             $user->save();
 
         $request->session()->flash('status', 'You have updated your account!');
@@ -74,25 +58,7 @@ class UserProfileController extends Controller
     }
 
 
-    function changePassword(Request $request){
 
-
-            if($request->oldpassword == $request->user()->password) {
-
-
-                $this->validate($request, [
-                    'password' => 'required|min:8|confirmed',
-                    //'password' => 'min:6|confirmed',
-
-                ]);
-
-                $request->user()->password = bcrypt($request->password);
-
-            }else{
-
-            }
-
-}
     /*
     |-------------------------------------------------------------------------------
     | Updates a User's Profile
@@ -111,54 +77,94 @@ class UserProfileController extends Controller
     public function userProfileUpdate(Request $request)
     {
 
-
-//        if($request->hasFile('avatar')){
-//
-//            $this->validate($request,[
-//
-//                'avatar' =>  'mimes:png',
-//
-//            ]);
-//
-
-
-
-
         $this->validate($request, [
-//            'age' => 'required|integer|min:1',
+
             'fname' => 'required|string|min:1',
             'lname' => 'required|string|min:1',
-            'country' => 'required',
-            'state' => 'required|string|min:1',
+            'mname' => 'required|string|min:1',
+            'oname' => 'required|string|min:1',
             'gender' => 'required',
-            'email' => 'required|email|unique:users,email,' . Auth::id()
+            'age' => 'required|integer|min:1',
+            'dob' => 'required',
+            'cob' => 'required|string|min:1',
+            'country' => 'required|string|min:1',
+            'city' => 'required|string|min:1',
+            'state' => 'required|string|min:1',
+            'haddress' => 'required',
+            'nationality' => 'required|string|min:1',
+            //'other citizenship' => 'required|string|min:1',
+            'expiry' => 'required',
+            'pdivorced' => 'required|string|min:1',
+            'mstatus' => 'required',
+            'nlanguage' => 'required|string|min:1',
+            'language' => 'required|string|min:1',
+           // 'email' => 'required|email|unique:users,email,' . Auth::id()
         ]);
-//        if (isset($request['avatar'])) {
-////            $request->user()->addMediaFromRequest('avatar')->toMediaCollection('avatars');
-////            $imageName = time().'.'.$request->avatar->getClientOriginalExtension();
-////            $request->avatar->move(public_path('images'), $imageName);
-//            $request->user()->uploadImage(request()->file('avatar'));
-//        }
 
-       //
+        $userprofile = UserProfile::where('user_id', Auth()->id())->first();
 
 
-        $request->user()->forceFill([
-            'fname' => $request->fname,
-               // email => $request->age,
-                'lname' => $request->lname,
-                'country' => $request->country,
-                'state' => $request->state,
-                'gender' => $request->gender,
 
-        ])->save();
+        if(!$userprofile){
+
+            $userprofile= new UserProfile();
+        }
+
+        $userprofile->fname = $request->fname;
+        $userprofile->lname = $request->lname;
+        $userprofile->mname = $request->mname;
+        $userprofile->oname = $request->oname;
+        $userprofile->country = $request->country;
+        $userprofile->city = $request->city;
+        $userprofile->state = $request->state;
+        $userprofile->address = $request->address;
+        $userprofile->gender = $request->gender;
+        $userprofile->age = $request->age;
+        $userprofile->dob = $request->dob;
+        $userprofile->cob = $request->cob;
+        $userprofile->nationality = $request->nationality;
+        $userprofile->citizenship = $request->citizenship;
+        $userprofile->expiry = $request->expiry;
+        $userprofile->pdivorced = $request->pdivorced;
+        $userprofile->mstatus = $request->mstatus;
+        $userprofile->nlanguage = $request->nlanguage;
+        $userprofile->language = $request->language;
+        $userprofile->save();
+
+//        $userprofile->forceCreate([
+//            'fname' => $request->fname,
+//            'lname' => $request->lname,
+//            'mname' => $request->mname,
+//            'oname' => $request->oname,
+//            'country' => $request->country,
+//            'city' => $request->city,
+//            'state' => $request->state,
+//            'address' => $request->haddress,
+//            'gender' => $request->gender,
+//            'age' => $request->age,
+//            'dob' => $request->dob,
+//            'cob' => $request->cob,
+//            'nationality' => $request->nationality,
+//            'other_citizenship' => $request->other_citizenship,
+//            'passport_expiry' => $request->passport_expiry,
+//            'previously_divorced' => $request->pdivorced,
+//            'marital_status' => $request->mstatus,
+//            'native_language' => $request->nlanguage,
+//            'language_spoken' => $request->language,
+//
+//
+//
+//
+//        ])->save();
+
+        return ['message'=>'Profile Updated!'];
     }
 
     public function userProfileGet(){
-        $user = $this->getAuthUser ();
+        $userProfile = $this->getUserProfile();
 
 
-        return response()->json($user);
+        return response()->json($userProfile);
     }
     public function destroy(){
 //validate to confirm(todo)

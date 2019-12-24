@@ -22,8 +22,6 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->string('phone');
             $table->string('visa_for')->default('Canada');
-            $table->string('city')->default('Lagos');
-            $table->string('country')->default('Nigeria');
             $table->timestamps();
             $table->softDeletes();
         });
