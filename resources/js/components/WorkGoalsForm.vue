@@ -6,75 +6,37 @@
         <h2>My Goals</h2>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="location">Where are you intending to work? </label>
-                <select v-model="location" class="custom-select" id="location"    @change="errors.clear('location')">
-                    <option value="none " selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <span class="help is-danger" v-text="errors.get('location')"></span>
-            </div>
-            <div class="form-group col-md-6">
                 <label for="gotjob">Have you gotten a job yet?</label>
                 <select v-model="gotjob" class="custom-select"id="gotjob" @change="errors.clear('gotjob')">
                     <option selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+
                 </select>
                 <span class="help is-danger" v-text="errors.get('gotjob')"></span>
             </div>
+            <div class="form-group col-md-6">
+                <label for="workdestination">Which company?</label>
+                <input id="workdestination" name="workdestination" v-model="workdestination" class="form-control" type="text" placeholder="e.g.IBM Canada">
+            </div>
+
         </div>
         <div class="form-row mb-5">
             <div class="form-group mb-md-0 col-md-6">
                 <label for="profession">What career path are you thnking of going into?</label>
-                <select v-model="profession" name="profession" class="custom-select" id="profession" @change="errors.clear('profession')">
-                    <option selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <span class="help is-danger" v-text="errors.get('profession')"></span>
+                <input id="profession" name="profession" v-model="profession" class="form-control" type="text" placeholder="Profession">
+                <span class="help is-danger" v-text="errors.get('discipline')"></span>
             </div>
             <div class="form-group mb-0 col-md-6">
                 <label for="certification">Do you have certification to work in the choosen career field?</label>
                 <select v-model="certification" name="certification"  class="custom-select" id="certification" @change="errors.clear('certification')">
                     <option selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
                 <span class="help is-danger" v-text="errors.get('certification')"></span>
             </div>
         </div>
-
-        <h2>My Future Plans</h2>
-
-        <span class="sub-title">A. English proficiency test</span>
-
-        <span class="help is-danger" v-text="errors.get('language')"></span>
-        <ul class="radios-holder">
-            <li>
-                <div class="checkbox-radio">
-                    <input  v-model="language"  type="checkbox" value="ielts" name="language" id="wielts" @change="errors.clear('language')">
-                    <label for="wielts">IELTS</label>
-                </div>
-            </li> <li>
-            <div class="checkbox-radio">
-                <input  v-model="language"  type="checkbox" value="toeic" name="language" id="wtoeic" @change="errors.clear('language')">
-                <label for="wtoeic">TOEIC</label>
-            </div>
-        </li>
-            <li>
-            <div class="checkbox-radio">
-                <input  v-model="language" value="toefl" name="language"  type="checkbox" id="wtoefl" @change="errors.clear('language')">
-                <label for="wtoefl">TOEFL</label>
-            </div>
-        </li>
-
-        </ul>
-
 
         <div class="text-right mt-4">
             <button  class="button btn" :disabled="errors.any()">Save</button>

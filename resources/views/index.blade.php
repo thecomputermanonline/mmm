@@ -253,12 +253,14 @@
                         </div>
 
                         <!-- Text #2 -->
+                        <!--
                         <div class="box-list">
                             <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
                             <p>Quaerat sodales sapien undo euismod risus auctor egestas augue mauri undo viverra tortor
                                 sapien sodales sapien and vitae donec  gravida donec enim blandit ipsum at porta justo integer
                             </p>
                         </div>
+                        -->
 
                         <!-- Button -->
                         <a href="tel:123456789" class="btn btn-md btn-primary black-hover">
@@ -510,8 +512,7 @@
                     <h2 class="h2-xs darkblue-color">Select Country & Visa Type</h2>
 
                     <!-- Text -->
-                    <p class="p-md">Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat,
-                        felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa
+                    <p class="p-md">Select a country of your choice from the list below and choose the type of visa you would like according to your period of stay.
                     </p>
 
                 </div>
@@ -632,7 +633,7 @@
                                     <h5 class="h5-xs darkblue-color">Travel Visa</h5>
 
                                     <!-- Text -->
-                                    <p>Porta semper lacus cursus, feugiat primis ultrice ligula in risus and auctor tempus</p>
+                                    <p>We can help you get a travel visa that will allow you to stay in a country of your choice for a certain period of time either for leisure or business.</p>
 
                                 </div>
 
@@ -659,7 +660,7 @@
                                     <h5 class="h5-xs darkblue-color">Family Visa</h5>
 
                                     <!-- Text -->
-                                    <p>Porta semper lacus cursus, feugiat primis ultrice ligula in risus and auctor tempus</p>
+                                    <p>Get a visa for your family and friends to visit you where you are….</p>
 
                                 </div>
 
@@ -686,7 +687,7 @@
                                     <h5 class="h5-xs darkblue-color">PR Visa</h5>
 
                                     <!-- Text -->
-                                    <p>Porta semper lacus cursus, feugiat primis ultrice ligula in risus and auctor tempus</p>
+                                    <p>Our organization is there to assist you when looking for a permanent residential visa, which will allow you to live and work in any country of your choice on a permanent basis.</p>
 
                                 </div>
 
@@ -713,7 +714,7 @@
                                     <h5 class="h5-xs darkblue-color">Job Seeker Visa</h5>
 
                                     <!-- Text -->
-                                    <p>Porta semper lacus cursus, feugiat primis ultrice ligula in risus and auctor tempus</p>
+                                    <p>This type of visa allows you to work in a certain country of your choice through a specific period of time and we are here to ensure that you collect this visa and simplify the process for obtaining it.</p>
 
                                 </div>
 
@@ -741,7 +742,7 @@
                                     <h5 class="h5-xs darkblue-color">Business Visa</h5>
 
                                     <!-- Text -->
-                                    <p>Porta semper lacus cursus, feugiat primis ultrice ligula in risus and auctor tempus</p>
+                                    <p>This is a short term visa for business negotiations, discussions/presentations and our job is to assist you obtain it in case you are looking to travel abroad for a business trip.</p>
 
                                 </div>
 
@@ -2009,8 +2010,7 @@
                         <h3 class="h3-md txt-400">Free Immigration & Visa Consultation</h3>
 
                         <!-- Text -->
-                        <p class="p-md">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero
-                            tempus, and blandit posuere ligula varius magna congue cursus porta ultrice
+                        <p class="p-md">Consultation available at no cost, all you have to do is click the contact below and get started.
                         </p>
 
                     </div>

@@ -3,33 +3,29 @@
     <h2>Work Experience (up to the last 10 years)</h2>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="weducation">Job Title</label>
-            <select  class="custom-select" name="education"  id="weducation" v-model="education" @change="errors.clear('education')">>
-                <option selected>Please select</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <span class="help is-danger" v-text="errors.get('education')"></span>
+            <label for="company">Company</label>
+            <input id="company" name="company" v-model="company" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
+            <span class="help is-danger" v-text="errors.get('company')"></span>
+
         </div>
         <div class="form-group col-md-6">
-            <label for="wrecentinstitution">Company</label>
-            <input id="wrecentinstitution" name="recentinstitution" v-model="recentinstitution" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
-            <span class="help is-danger" v-text="errors.get('recentinstitution')"></span>
+            <label for="jobtitle">Job Title</label>
+            <input id="jobtitle" name="jobtitle" v-model="jobtitle" class="form-control" type="text" placeholder="e.g.School Teacher">
+            <span class="help is-danger" v-text="errors.get('jobtitle')"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="sdate">from</label>
+            <input type="date" name="sdate" placeholder="Starting Date?" v-model="sdate" class="form-control" id="sdate">
+            <span class="help is-danger" v-text="errors.get('sdate')"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="edate">To </label>
+            <input type="date" name="edate" placeholder="Finishing Date?" v-model="edate" class="form-control" id="edate">
+            <span class="help is-danger" v-text="errors.get('edate')"></span>
         </div>
     </div>
 
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="grade">grade?</label>
-            <input id="grade" name="grade" v-model="grade" class="form-control" type="text" placeholder="Enter GPA score">
-            <span class="help is-danger" v-text="errors.get('grade')"></span>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="recentmajorprogramme">course</label>
-            <input name="recentmajorprogramme" id="recentmajorprogramme" v-model="recentmajorprogramme" class="form-control" type="text" placeholder="Example: law">
-            <span class="help is-danger" v-text="errors.get('recentmajorprogramme')"></span>
-        </div>
+    <div class="form-group col-md-6">
 
     </div>
     <div class="btn-container">

@@ -16,11 +16,9 @@ class CreateUserWorkGoalsTable extends Migration
         Schema::create('user_work_goals', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
-            $table->string('location');
             $table->string('gotjob');
-            $table->string('profession');
-            $table->string('certified');
-            $table->string('language_skills');
+            $table->string('company');
+            $table->string('jobtitle');
             $table->string('professional_certifications');
             $table->string('skill_sets');
 

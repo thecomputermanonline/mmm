@@ -59,8 +59,11 @@ Route::get('/course-detail', function () {
 });
 Route::get('/articles', 'ArticlesController@index') ;
 Route::get('/articles/{article}', 'ArticlesController@show') ;
-
-
+Route::get('/get-finsup', 'UserInterestController@get_finsup')->name('get_finsup');
+Route::get('/get-study', 'UserInterestController@get_study')->name('get_study');
+Route::get('/get-work', 'UserInterestController@get_work')->name('get_work');
+Route::get('/get-relocate', 'UserInterestController@get_relocate')->name('get_relocate');
+Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
 Route::post('/store-dependant', 'UserDependantsController@store')->name('store_dependants');
 Route::post('/store-finsup', 'UserFinancialPlanController@store')->name('store_finsup');
 Route::post('reset_password_without_token', 'UserController@validatePasswordRequest');

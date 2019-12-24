@@ -235,7 +235,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="nationality">Nationality</label>gut
+                                        <label for="nationality">Nationality</label>
                                         <select class="custom-select" id="nationality" v-model="nationality" name="nationality">
                                             <option value="">Nationality</option>
                                             <option value="Nigeria">Nigeria</option>
@@ -253,7 +253,7 @@
                                     <label for="citizenship"> Other Citizenship</label>
 
                                     <select class="custom-select" id="citizenship" v-model="citizenship" name="citizenship">
-                                        <option value="">In case of dual Citizen ship</option>
+                                        <option value="not applicable">In case of dual Citizen ship</option>
                                         <option value="Nigeria">Nigeria</option>
                                         <option value="New Zealand">New Zealand</option>
                                         <option value="Niger">Niger</option>
@@ -481,7 +481,7 @@ props:['user'],
         },
 
     mounted() {
-       // this.getProfile();
+        this.getProfile();
         this.getDate();
     },
 
@@ -510,12 +510,25 @@ getDate(){
         getProfile() {
             axios.get('/userProfileGet').then(response => {
 
-                this.fname = response.data.fname;
+                this.mname = response.data.mname;
                 this.lname = response.data.lname;
-                this.country= response.data.country;
-                this.state = response.data.state;
+                this.oname = response.data.oname;
+                this.haddress = response.data.haddress;
+                this.city = response.data.city;
+                this.country = response.data.country;
+                this.state  = response.data.state;
+                this.age = response.data.age;
+                this.dob  = response.data.dob;
+                this.cob = response.data.cob;
                 this.gender = response.data.gender;
-                this.email = response.data.email;
+                this.nationality = response.data.nationality;
+                this.citizenship = response.data.citizenship;
+                this.expiry = response.data.expiry;
+                this.pdivorced = response.data.pdivorced;
+                this.mstatus = response.data.mstatus;
+                this.nlanguage = response.data.nlanguage;
+                this.language = response.data.language;
+
                 if(!response.data.avatar){
                     this.avatar = '/images/header/profile_ic.jpg';
                     this.avatarstyle = 'background-image: url("/images/header/profile_ic.jpg")' ;

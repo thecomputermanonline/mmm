@@ -22,6 +22,7 @@ class UserProfileController extends Controller
     public function getUserProfile()
     {
         $user = $this->getAuthUser();
+    dd($user->userProfile);
         return $user->userProfile;
     }
     public function updateAuthUser (Request $request)
@@ -161,7 +162,9 @@ class UserProfileController extends Controller
     }
 
     public function userProfileGet(){
-        $userProfile = $this->getUserProfile();
+        //$userProfile = $this->getUserProfile();
+        $user = $this->getAuthUser();
+        $userProfile =$user->userProfile;
 
 
         return response()->json($userProfile);

@@ -29,7 +29,7 @@ class CreateUserProfilesTable extends Migration
             $table->date('dob'  );
             $table->string('cob' );
             $table->string( 'nationality');
-            $table->string( 'citizenship' );
+            $table->string( 'citizenship' )->default("Not Applicable");
             $table->date('expiry' );
             $table->string('pdivorced' );
             $table->string(  'mstatus' );

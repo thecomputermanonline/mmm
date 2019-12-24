@@ -18,7 +18,6 @@ class CreateUserWorkExperiencesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('company');
             $table->string('job_title');
-            $table->string('job_location');
             $table->string('job_period_start');
             $table->string('job_period_end');
 

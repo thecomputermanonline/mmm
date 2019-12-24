@@ -87,6 +87,13 @@
                             <h3 class="h3-lg">We make the visa process faster</h3>
 
                             <!-- INFO BOX #1 -->
+                            <div>
+                                <p>Migration masters is an agency that serves as a resource center to support students, interns, volunteers and individuals looking to relocate abroad. Our agency is there to advise and assist you through your relocating journey and simplify your visa application process. It is our mission to change lives through meaningful travel, one destination at a time. We believe that travel is the key to individuals attaining a broader perspective of the world, and that the world is a better place when people have a deeper understanding and greater empathy toward all individuals and cultures.
+                                    Migration masters first set out to fill the information gap between students with a desire to travel abroad and companies offering international programs. As the travel industry has evolved and access to opportunities to see the world has grown, our mission has transformed into something much greater than building a bridge between travellers and organizations: we’ve developed and evolved over the past two years to meet the ever-changing needs of travellers, positioning ourselves as the resource for meaningful travel around the world.
+                                    Find a consultant by: Choose a consultant on any of the countries you want to visit below and we shall provide you with customized advice on meaningful travel.
+                                </p>
+                            </div>
+                        <!--
                             <div class="box-list">
                                 <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
                                 <p>An magnis nulla dolor sapien augue erat iaculis purus tempor magna ipsum vitae purus
@@ -94,23 +101,25 @@
                                     ligula
                                 </p>
                             </div>
-
-                            <!-- INFO BOX #2 -->
+                        -->
+                        <!--
+                            <!-- INFO BOX #2 >
                             <div class="box-list">
                                 <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
                                 <p>Nemo ipsam egestas volute turpis dolores and aliquam quaerat sodales sapien undo pretium
                                     purus ligula tempus ipsum undo auctor a mauris lectus ipsum blandit
                                 </p>
                             </div>
-
-                            <!-- INFO BOX #3 -->
+                        -->
+                        <!--
+                                <!-- INFO BOX #3 ->
                             <div class="box-list">
                                 <div class="box-list-icon"><i class="fas fa-genderless"></i></div>
                                 <p>Quaerat sodales sapien undo euismod purus and blandit laoreet augue an augue egestas. Augue
                                     iaculis purus and augue tempor congue magna egestas magna ligula
                                 </p>
                             </div>
-
+                        -->
 
                         </div>
                     </div>	<!-- END ABOUT TEXT	-->

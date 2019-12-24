@@ -2,27 +2,22 @@
     <div>
     <form class="interest-form" method="post" action="/store-study-goals" @submit.prevent="onSubmit" @change="errors.clear($event.target.name)">
 
-        <h2>My Goals</h2>
+        <h2>What is your current study goal?</h2>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="study">Have you got an offer of admission ?</label>
                 <select v-model="study" name ="study"  class="custom-select" id="study" @change="errors.clear('study')">
                     <option selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+
                 </select>
                 <span class="help is-danger" v-text="errors.get('study')"></span>
             </div>
             <div class="form-group col-md-6">
-                <label for="when">Which school?</label>
-                <select v-model="when" name ="when" class="custom-select" id="when" @change="errors.clear('when')">
-                    <option selected>Please select</option>>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <span class="help is-danger" v-text="errors.get('when')"></span>
+                <label for="school">Which school</label>
+                <input v-model="school" name="school" id="school"  class="form-control" type="text" placeholder="School Name" >
+                <span class="help is-danger" v-text="errors.get('school')"></span>
             </div>
 
         </div>
@@ -34,9 +29,13 @@
             </div>
 
             <div class="form-group mb-0 col-md-6">
-                <label for="destination">starting date?</label>
-                <input v-model="destination"  name ="destination" id="destination" class="form-control" type="text" placeholder="Enter study destination(s)">
-                <span class="help is-danger" v-text="errors.get('destination')"></span>
+
+                    <div class="form-group">
+                        <label for="sdate">Starting Date</label>
+                        <input type="date" name="sdate" placeholder="When are you starting?" v-model="sdate" class="form-control" id="sdate">
+                        <span class="help is-danger" v-text="errors.get('sdate')"></span>
+                    </div>
+
             </div>
         </div>
 

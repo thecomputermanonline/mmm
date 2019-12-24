@@ -38,10 +38,10 @@
                 <router-link :to="{ name: 'updateprofile' }" class="dropdown-item" > My Profile</router-link>
                 <router-link :to="{ name: 'board' }" class="dropdown-item" > My Applications</router-link>
                 <router-link :to="{ name: 'stories' }" class="dropdown-item" > My Stories</router-link>
-
+                <router-link :to="{ name: 'account' }" class="dropdown-item" > My Account</router-link>
 <!--                <a class="dropdown-item" href="/billing">My Plans</a>-->
 
-                <a class="dropdown-item" href="/my-account">My Account</a>
+
 
                            <a id="logout-link" href="#" @click.prevent="logout">Logout</a>
 

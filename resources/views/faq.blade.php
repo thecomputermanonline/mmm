@@ -77,7 +77,7 @@
                                 <div class="card-header" role="tab" id="headingOne">
                                     <h5 class="h5-xs">
                                         <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
-                                            <span>1.</span> Which payment methods do you accept?
+                                            <span>1.How do I book an appointment with an immigration consultant?</span>
                                         </a>
                                     </h5>
                                 </div>
@@ -87,10 +87,7 @@
                                     <div class="card-body">
 
                                         <!-- Text -->
-                                        <p>Nullam rutrum eget nunc varius etiam mollis risus congue aliquam etiam sapien
-                                            egestas, congue gestas posuere cubilia congue and ipsum mauris lectus laoreet
-                                            gestas neque vitae auctor eros dolor luctus odio tempor sapien gravida donec
-                                            and ipsum porta
+                                        <p>You can call us directly through this number or you can go to our home page and book a request for consultation.
                                         </p>
 
                                     </div>
@@ -102,7 +99,7 @@
                             <!-- ACCORDION CARD #2 -->
                             <div class="card">
 
-                                <!-- Card Title -->
+                                <!-- Card Title ->
                                 <div class="card-header" role="tab" id="headingTwo">
                                     <h5 class="h5-xs">
                                         <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
@@ -110,7 +107,7 @@
                                         </a>
                                     </h5>
                                 </div>
-
+                            -->
                                 <!-- Card Content -->
                                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body">
@@ -132,7 +129,7 @@
                                                 odio tempor sapien
                                             </p>
                                         </div>
-
+                            -->
                                     </div>
                                 </div>
 
@@ -162,7 +159,7 @@
                                             tincidunt tincidunt massa
                                         </p>
 
-                                        <!-- Text -->
+
                                         <p>Nullam non scelerisque lectus. In at mauris vel nisl convallis porta at vitae
                                             dui. Nam lacus ligula, vulputate molestie bibendum
                                         </p>
@@ -170,7 +167,7 @@
                                     </div>
                                 </div>
 
-                            </div>	  <!-- END ACCORDION CARD #3 -->
+                            </div>
 
 
                             <!-- CATEGORY TITLE  -->

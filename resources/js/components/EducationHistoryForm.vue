@@ -3,36 +3,39 @@
     <h2>Education History</h2>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="education">education level?</label>
-            <select  class="custom-select" id="education" v-model="education" @change="errors.clear('education')">
-                <option selected>Please select</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <span class="help is-danger" v-text="errors.get('education')"></span>
+            <label for="institution">institution?</label>
+            <input id="institution" name="institution" v-model="institution" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
+            <span class="help is-danger" v-text="errors.get('institution')"></span>
         </div>
         <div class="form-group col-md-6">
-            <label for="recentinstitution">institution?</label>
-            <input id="recentinstitution" name="recentinstitution" v-model="recentinstitution" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
-            <span class="help is-danger" v-text="errors.get('recentinstitution')"></span>
+            <label for="qualification">Qualification</label>
+            <input id="qualification" name="qualification" v-model="qualification" class="form-control" type="text" placeholder="Example: Bachealor Degree">
+            <span class="help is-danger" v-text="errors.get('qualification')"></span>
         </div>
+
     </div>
 
 
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="grade">grade?</label>
-            <input id="grade" name="grade" v-model="grade" class="form-control" type="text" placeholder="Enter GPA score">
-            <span class="help is-danger" v-text="errors.get('grade')"></span>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="recentmajorprogramme">course</label>
-            <input name="recentmajorprogramme" id="recentmajorprogramme" v-model="recentmajorprogramme" class="form-control" type="text" placeholder="Example: law">
-            <span class="help is-danger" v-text="errors.get('recentmajorprogramme')"></span>
+            <label for="discipline">Discipline</label>
+            <input id="discipline" name="discipline" v-model="discipline" class="form-control" type="text" placeholder="Enter Discipline">
+            <span class="help is-danger" v-text="errors.get('discipline')"></span>
         </div>
 
-    </div>
+            <div class="form-group col-md-3 ">
+                <label for="sdate">from</label>
+                <input type="date" name="sdate" placeholder="Starting Date?" v-model="sdate" class="form-control" id="sdate">
+                <span class="help is-danger" v-text="errors.get('sdate')"></span>
+            </div>
+            <div class="form-group col-md-3 ">
+                <label for="edate">To </label>
+                <input type="date" name="edate" placeholder="Finishing Date?" v-model="edate" class="form-control" id="edate">
+                <span class="help is-danger" v-text="errors.get('edate')"></span>
+            </div>
+        </div>
+
+
     <div class="btn-container">
         <button class="btn  btn-block btn-sm" :disabled="errors.any()" >Save and Add More</button>
     </div>

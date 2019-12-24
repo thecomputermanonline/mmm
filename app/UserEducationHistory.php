@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class UserEducationHistory extends Model
 {
+    protected $fillable = ['admission_offer', 'school', 'course', 'starting_date'];
+
     //
 
     public function user() {

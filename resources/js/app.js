@@ -1,3 +1,5 @@
+import Profile from "./components/Profile";
+
 require('./bootstrap');
 
 window.events = new Vue();
@@ -59,6 +61,11 @@ const router = new VueRouter({
             path: '/profile',
             name: 'updateprofile',
             component: UpdateProfile,
+        },
+        {
+            path: '/account',
+            name: 'account',
+            component: Profile,
         },
         {
             path: '/stories',
