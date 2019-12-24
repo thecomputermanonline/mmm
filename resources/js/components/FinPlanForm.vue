@@ -5,7 +5,7 @@
         <div class="form-group">
             <label for="sponsor">Financial Support</label>
             <select v-model="sponsor"  name="sponsor" class="custom-select" id="sponsor">
-                <option selected>Please select</option>
+                <option value="" >Please select</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
 

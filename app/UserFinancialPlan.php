@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class UserFinancialPlan extends Model
 {
     //
+    protected $fillable = ['sponsor', 'budget'];
 
 
     public function user() {

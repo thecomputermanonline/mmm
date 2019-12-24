@@ -235,18 +235,18 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="nationality">Nationality</label>
+                                        <label for="nationality">Nationality</label>gut
                                         <select class="custom-select" id="nationality" v-model="nationality" name="nationality">
-                                            <option value="">Citizenship</option>
+                                            <option value="">Nationality</option>
                                             <option value="Nigeria">Nigeria</option>
                                             <option value="New Zealand">New Zealand</option>
                                             <option value="Niger">Niger</option>
                                             <option value="Norway">Norway</option>
                                             <option value="Oman">Oman</option>
                                             <option value="Pakistan">Pakistan</option>
-                                        </select>
+                                        </select><span class="help is-danger" v-text="errors.get('nationality')"></span>
                                     </div>
-                                    <span class="help is-danger" v-text="errors.get('nationality')"></span>
+
                                 </div>
 
                                 <div class="col-md-6">
@@ -260,17 +260,17 @@
                                         <option value="Norway">Norway</option>
                                         <option value="Oman">Oman</option>
                                         <option value="Pakistan">Pakistan</option>
-                                    </select>
-                                    <span class="help is-danger" v-text="errors.get('citizenship')"></span>
+                                    </select> <span class="help is-danger" v-text="errors.get('citizenship')"></span>
+
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="expiry">Passport Expiry Date</label>
                                         <input type="date" name="expiry" placeholder="When does Your Passport Expire" v-model="expiry" class="form-control" id="expiry">
-
+                                        <span class="help is-danger" v-text="errors.get('expiry')"></span>
                                     </div>
-                                    <span class="help is-danger" v-text="errors.get('expiry')"></span>
+
                                 </div>
                                 <div class="col-md-6">
                                     <label>Previously Divorced?</label>
@@ -285,8 +285,9 @@
                                             <input type="radio" id="no" value="no" v-model="pdivorced" name="pdivorced">
                                             <label for="no">No</label>
                                         </div>
+                                        <span class="help is-danger" v-text="errors.get('pdivorced')"></span>
                                     </div>
-                                    <span class="help is-danger" v-text="errors.get('pdivorced')"></span>
+
                                 </div>
 
                                 <div class="col-md-12">
@@ -321,9 +322,9 @@
                                             <input type="radio" id="widowed" value="Widowed" v-model="mstatus" name="mstatus">
                                             <label for="widowed">Widowed</label>
                                         </div>
+                                    </div>  <span class="help is-danger" v-text="errors.get('mstatus')"></span>
                                     </div>
-                                    </div>
-                                    <span class="help is-danger" v-text="errors.get('mstatus')"></span>
+
                                 </div>
 
 
@@ -332,8 +333,8 @@
                                     <div class="form-group">
                                         <label for="nlanguage">Native Language</label>
                                         <input type="text" name="nlanguage" placeholder="e.g Mauritian Creole"  v-model="nlanguage" class="form-control" id="nlanguage">
-                                    </div>
-                                    <span class="help is-danger" v-text="errors.get('nlanguage')"></span>
+                                        <span class="help is-danger" v-text="errors.get('nlanguage')"></span>   </div>
+
                                 </div>
 
                                 <div class="col-md-6">

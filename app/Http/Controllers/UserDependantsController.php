@@ -20,10 +20,10 @@ class UserDependantsController extends Controller
             ]
             );
         $dependant = new UserDependant;
-            $dependant->user_id = bcrypt($request->sponsor);
-            $dependant->name = bcrypt($request->name);
-            $dependant->relationship = bcrypt($request->relationship);
-            $dependant->age = bcrypt($request->age);
+            $dependant->user_id = Auth()->id();
+            $dependant->name = $request->name;
+            $dependant->relationship = $request->relationship;
+            $dependant->age = $request->age;
             $dependant->save();
        // }
         return ['message'=>'Your Dependants goals saved!'];

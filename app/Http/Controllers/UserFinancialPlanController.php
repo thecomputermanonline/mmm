@@ -27,7 +27,8 @@ class UserFinancialPlanController extends Controller
         $financial_plan = UserFinancialPlan::where('user_id', Auth()->id())->first();
 
         if(!$financial_plan){
-            $financial_plan = UserFinancialPlan::class;
+            $financial_plan = new UserFinancialPlan();
+            $financial_plan->user_id = Auth()->id();
         }
 
 

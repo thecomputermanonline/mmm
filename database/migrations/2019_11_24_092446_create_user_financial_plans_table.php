@@ -16,7 +16,7 @@ class CreateUserFinancialPlansTable extends Migration
         Schema::create('user_financial_plans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
-            $table->string('financial_support');
+            $table->string('sponsor');
             $table->string('budget');
             //$table->text('important_factors_order');
             //'id','title','order','status'
