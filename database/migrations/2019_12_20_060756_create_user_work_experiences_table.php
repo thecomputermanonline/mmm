@@ -22,6 +22,8 @@ class CreateUserWorkExperiencesTable extends Migration
             $table->string('job_period_end');
 
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

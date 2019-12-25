@@ -133,7 +133,10 @@
 
                                     <!-- POST TAGS -->
                                     <div class="col-md-9 col-xl-6 post-tags-list">
-                                        <span><a href="#">Consultations</a></span>
+                                        @foreach ($articles->tags as $article_tag)
+                                            <span>   <a href="/tags/{{$article_tag->name}}">  {{$article_tag->name}} Immigration</a></span>
+                                        @endforeach
+                                        <a href="#">Consultations</a></span>
                                         <span><a href="#">Immigration</a></span>
                                         <span><a href="#">Visa</a></span>
                                     </div>

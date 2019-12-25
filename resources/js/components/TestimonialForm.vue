@@ -148,7 +148,7 @@
                 excerpt: '',
                 body: '',
                 make_public: '',
-                rate_us: '',
+                tag: '',
                 errors: new Errors(),
 
             }

@@ -27,7 +27,7 @@ import StudyGoalsForm      from './components/StudyGoalsForm'
 import WorkGoalsForm      from './components/WorkGoalsForm'
 import BackgroundInfo      from './components/BackgroundInfo'
 import TestimonialForm      from './components/TestimonialForm'
-import Stories      from './components/TestimonialForm'
+import Stories      from './components/Testimonials'
 import UpdateProfile      from './components/UpdateProfileForm'
 const router = new VueRouter({
     mode: 'history',

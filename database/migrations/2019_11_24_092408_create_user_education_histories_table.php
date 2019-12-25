@@ -23,6 +23,9 @@ class CreateUserEducationHistoriesTable extends Migration
             $table->string('grade');
             $table->string('location');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

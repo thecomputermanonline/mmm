@@ -75,8 +75,11 @@
                             <div class="blog-post-txt icon-xs">
 
                                 <!-- Post Data -->
-                                <p class="post-meta">August 10, 2019 in <span>PR & Immigration</span></p>
-
+                                <p class="post-meta">August 10, 2019 in
+                                    @foreach ($articles->tags as $article_tag)
+                                        <a href="/threads/{{$article->slug}}">  <span>{{$article_tag->name}}PR & Immigration</span></a>
+                            @endforeach
+                                </p>
                                 <!-- Title -->
                                 <h4 class="h4-xs deepblue-color">{{$article->title}}</h4>
 

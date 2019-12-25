@@ -23,6 +23,8 @@ class CreateArticlesTable extends Migration
             $table->boolean('is_published')->default('1');
             $table->timestamps();
            // $table->timestamps('published_at')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

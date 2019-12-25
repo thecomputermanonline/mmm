@@ -23,7 +23,13 @@ class CreateUserTestimonialsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->boolean('isPublished')->default(false);
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
+
+        //FOREIGN KEY CONSTRAINTS
+
+          //  $table->foreign('permission_id')->references('id')->on('permissions')->onDelete('cascade');
+
     }
 
     /**

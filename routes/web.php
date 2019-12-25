@@ -80,7 +80,8 @@ Route::post('/contact', 'MailController@contact')->name('contact');
 Route::get('/threads', 'ThreadsController@index')->name('index');
 Route::get('/threads/{thread}', 'ThreadsController@show')->name('show');
 Route::post('/userProfileUpdate', 'UserProfileController@userProfileUpdate')->name('updateUserProfile');
-
+Route::get('/testimonials', 'UserTestimonialController@index');
+Route::get('/testimonials/{testimonial}', 'UserTestimonialController@index');
 Auth::routes(['verify' => true]);
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'SinglePageController@index')->where('any', '.*')->name('dashboard');

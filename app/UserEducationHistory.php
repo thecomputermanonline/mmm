@@ -7,10 +7,9 @@ use Illuminate\Http\Request;
 
 class UserEducationHistory extends Model
 {
-    protected $fillable = ['admission_offer', 'school', 'course', 'starting_date'];
+    protected $fillable = ['school', 'qualification', 'course', 'starting_date' , 'ending _date'];
 
     //
-
     public function user() {
         return $this->belongsTo(User::class);
     }

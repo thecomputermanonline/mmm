@@ -37,6 +37,8 @@ class CreateUserProfilesTable extends Migration
             $table->string('language');
 
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

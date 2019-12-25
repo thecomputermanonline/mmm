@@ -23,34 +23,9 @@ class CreateUserWorkGoalsTable extends Migration
             $table->string('skill_sets');
 
             $table->timestamps();
-//            $table->string('gotjob');
-//            $table->string('interestedprofession');
-//            $table->string('qualifiedforjob');
-//            $table->string('whyrelocate');
-//            $table->string('likeconsultation');
-//            $table->string('eligibleforcountry');
-
-            //type
-            //goalsdependsontype
-
-            //why
-            //eligble?
-            //consultation?
-
-            //future plns/test
-            //english test
-            //undergraduatetest
-            //postgraduate
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
 
-            //background
-            //highest education
-            //mostrecentorcurrentinstition
-            //current
-
-            //workexperince
-            //factorpreferece
-            //finacial plan
         });
     }
 

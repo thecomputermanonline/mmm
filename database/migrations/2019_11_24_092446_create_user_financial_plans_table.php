@@ -21,6 +21,8 @@ class CreateUserFinancialPlansTable extends Migration
             //$table->text('important_factors_order');
             //'id','title','order','status'
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

@@ -20,6 +20,8 @@ class CreateUserDependantsTable extends Migration
             $table->string('relationship');
             $table->string('age');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

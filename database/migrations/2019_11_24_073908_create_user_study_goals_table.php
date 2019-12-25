@@ -24,34 +24,8 @@ class CreateUserStudyGoalsTable extends Migration
             $table->text('undergraduate');
             $table->text('postgraduate');
             $table->timestamps();
-//            $table->string('gotjob');
-//            $table->string('interestedprofession');
-//            $table->string('qualifiedforjob');
-//            $table->string('whyrelocate');
-//            $table->string('likeconsultation');
-//            $table->string('eligibleforcountry');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
-            //type
-            //goalsdependsontype
-
-            //why
-            //eligble?
-            //consultation?
-
-            //future plns/test
-            //english test
-            //undergraduatetest
-            //postgraduate
-
-
-            //background
-            //highest education
-            //mostrecentorcurrentinstition
-            //current
-
-            //workexperince
-            //factorpreferece
-            //finacial plan
         });
     }
 
