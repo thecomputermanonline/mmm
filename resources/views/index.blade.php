@@ -51,7 +51,7 @@
                 <div  class="col-lg-5 col-xl-5">
 
                     @guest
-                        gggg
+
                         <consultation-form></consultation-form>
                     @else
                         <div data-v-86e98a50="" role="alert" class="  spacing" >

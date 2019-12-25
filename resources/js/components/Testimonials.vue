@@ -32,11 +32,7 @@
 </template>
 
 <script>
-    import PortalVue from 'portal-vue'
 
-
-
-    Vue.use(PortalVue)
     export default {
         props:['user'],
         data(){
