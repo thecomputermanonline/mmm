@@ -9,33 +9,64 @@ class UserBackgroundInfoController extends Controller
 {
     //
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+
     public function store (Request $request)
     {
-        if($request->work){
+        // if($request->dependant){
 
-            $this->validate($request,[
-                'institution' => 'required|string',
-                'level' => 'required|string',
-                'grade' => 'required|integer',
-                'course' => 'required|integer',
+        $this->validate($request,[
+                'familytuberculosis' => 'required|string',
+                'mentaldisorder' => 'required|string',
 
-            ]);
-            $work = new UserBackgroundInfo();
-            $work->user_id = Auth()->id();
-            $work->company = $request->company;
-            $work->job_title = $request->job_title;
-            $work->job_level = $request->job_level;
-            $work->location = $request->location;
+                'beyondvalidity' => 'required|string',
+                'refusedentry' => 'required|string',
+                'previousapplication' => 'required|integer',
+                'policecertificate' => 'required|string',
+                'criminaloffence' => 'required|string',
+                'courtproceduresabroad' => 'required|integer',
+                'courtprocedureshome' => 'required|string',
 
-            $work->save();
+            ]
+        );
+
+        $user_background_info = UserBackgroundInfo::where('user_id', Auth()->id())->first();
+
+        if(!$user_background_info){
+            $user_background_info = new UserBackgroundInfo();
+            $user_background_info->user_id = Auth()->id();
         }
-        return ['message'=>'Work abroad goals saved!'];
+
+        $user_background_info->familytuberculosis = $request->familytuberculosis;
+        $user_background_info->mentaldisorder = $request->mentaldisorder;
+        $user_background_info->moreinfomedical = $request->moreinfomedical;
+        $user_background_info->beyondvalidity = $request->beyondvalidity;
+        $user_background_info->refusedentry = $request->refusedentry;
+        $user_background_info->previousapplication = $request->previousapplication;
+        $user_background_info->policecertificate = $request->policecertificate;
+        $user_background_info->criminaloffence = $request->criminaloffence;
+        $user_background_info->moreinfocriminal = $request->moreinfocriminal;
+        $user_background_info->courtproceduresabroad = $request->courtproceduresabroad;
+        $user_background_info->courtprocedureshome = $request->courtprocedureshome;
+        $user_background_info->moreinfocourt = $request->moreinfocourt;
+        $user_background_info->save();
+
+        return response()->json('Your Background info has been saved!');
     }
 
-    public function get_education()
+    public function get_background_info()
     {
-        $user_info = UserBackgroundInfo()::where('user_id', Auth()->id())->first();
-        return response()->json($user_info);
+
+        $user_background_info = UserBackgroundInfo::where('user_id', Auth()->id())->first();
+
+
+        return response()->json($user_background_info);
 
     }
+
 }

@@ -382,7 +382,7 @@
 
                     </div>
                     <div class="tab-pane fade" id="relocate" role="tabpanel" aria-labelledby="relocate-tab">
-                        <relocate-goals-form></relocate-goals-form>
+                        <background-info></background-info>
 
 
                     </div>
@@ -424,6 +424,8 @@
 </template>
 
 <script>
+    import BackgroundInfo from "./BackgroundInfo";
+
     class Errors{
         constructor(){
 
@@ -451,7 +453,8 @@
     }
 
     export default {
-props:['user'],
+        components: {BackgroundInfo},
+        props:['user'],
         data() {
             return {
                 now: getDate(),

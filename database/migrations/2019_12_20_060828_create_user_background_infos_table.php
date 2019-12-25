@@ -16,6 +16,8 @@ class CreateUserBackgroundInfosTable extends Migration
         Schema::create('user_background_infos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
+
+
             $table->timestamps();
         });
     }

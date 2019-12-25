@@ -66,6 +66,9 @@ Route::get('/get-relocate', 'UserInterestController@get_relocate')->name('get_re
 Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
 Route::post('/store-dependant', 'UserDependantsController@store')->name('store_dependants');
 Route::post('/store-finsup', 'UserFinancialPlanController@store')->name('store_finsup');
+Route::post('/store-countries-visited', 'UserVisitedCountries@store')->name('store_countries_visited');
+
+Route::get('/get-countries-visited', 'UserVisitedCountries@get_countries')->name('get_countries_visited');
 Route::post('reset_password_without_token', 'UserController@validatePasswordRequest');
 Route::post('reset_password_with_token', 'UserController@resetPassword');
 
