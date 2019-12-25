@@ -1,8 +1,10 @@
 <template>
     <section>
-        <strong class="heading d-block">Countries Visited</strong>
+
         <form class="interest-form" method="post" action="/store-countries-visited" @submit.prevent="onSubmit" @change="errors.clear($event.target.name)">
-            <div class="form-group">
+            <h2 class="heading d-block">Countries Visited</h2>
+           <div class="form-row">
+            <div class="form-group col-md-4">
                 <label for="country">Country </label>
                 <select class="custom-select" id="country" v-model="country_name" name="country">
                     <option value="">Please Choose one</option>
@@ -16,7 +18,7 @@
                 <span class="help is-danger" v-text="errors.get('country')"></span>
 
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-4">
                 <label for="year">Year</label>
                 <select v-model="year"  name="year" class="custom-select" id="year">
                     <option selected>Please select one</option>
@@ -27,14 +29,16 @@
                 </select>
                 <span class="help is-danger" v-text="errors.get('year')"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-4">
                 <label for="duration">Duration</label>
                 <input v-model="duration" name="duration"  id="duration" class="form-control" type="text" placeholder="e.g 5 weeks">
                 <span class="help is-danger" v-text="errors.get('duration')"></span>
             </div>
+           </div>
             <div class="btn-container">
                 <button class="btn  btn-block btn-sm" :disabled="errors.any()" >Save and Add More</button>
             </div>
+
         </form>
     </section>
 </template>

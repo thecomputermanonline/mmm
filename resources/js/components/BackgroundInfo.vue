@@ -141,32 +141,32 @@
 
 
 
-        <div class="form-row mb-5">
-            <div class="form-group mb-md-0 col-md-6">
-                <label for="rconsultation" class="d-flex align-items-center">Would you like consultation on your relocation?
-                    <span class="tool_tip">
-														<a href="#" class="render-tooltip" data-original-title="" title="">
-														  <img src="images/icons/info_ic.svg" alt="">
-														</a>
-														<span class="custom-tooltip" role="tooltip">
-														  <span class="arrow"></span>
-														  <span class="tooltip-inner">One of our consultants would reach out to you and mentor you through your relocation process.</span>
-														</span>
-													</span>
-                </label>
-                <select v-model="consultation" class="custom-select" name="consultation" id="rconsultation" @change="errors.clear('consultation')">
-                    <option selected>Please select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-        </div>
+<!--        <div class="form-row mb-5">-->
+<!--            <div class="form-group mb-md-0 col-md-6">-->
+<!--                <label for="rconsultation" class="d-flex align-items-center">Would you like consultation on your relocation?-->
+<!--                    <span class="tool_tip">-->
+<!--														<a href="#" class="render-tooltip" data-original-title="" title="">-->
+<!--														  <img src="images/icons/info_ic.svg" alt="">-->
+<!--														</a>-->
+<!--														<span class="custom-tooltip" role="tooltip">-->
+<!--														  <span class="arrow"></span>-->
+<!--														  <span class="tooltip-inner">One of our consultants would reach out to you and mentor you through your relocation process.</span>-->
+<!--														</span>-->
+<!--													</span>-->
+<!--                </label>-->
+<!--                <select v-model="consultation" class="custom-select" name="consultation" id="rconsultation" @change="errors.clear('consultation')">-->
+<!--                    <option selected>Please select</option>-->
+<!--                    <option value="1">One</option>-->
+<!--                    <option value="2">Two</option>-->
+<!--                    <option value="3">Three</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
 
         <div class="text-right mt-4">
-            <button  class="button btn1" :disabled="errors.any()">Save</button>
+            <button  class="btn  btn-sm" :disabled="errors.any()">Save</button>
         </div>
     </form>
     <countries-visited></countries-visited>
