@@ -1,6 +1,33 @@
 <template>
 <div>
     <h2>Education History</h2>
+
+    <div v-if="items" class="table col-md-12">
+        <table class="rank-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>institution</th>
+                <th>Qualification</th>
+                <th>Discipline</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Remove</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr  :key="item.id" v-for=" item in items " >
+                <td>{{item.id}}</td>
+                <td>{{item.institution}}</td>
+                <td>{{item.qualification}}</td>
+                <td>{{item.startdate}}</td>
+                <td>{{item.enddate}}</td>
+                <td>X</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="institution">institution?</label>
@@ -24,14 +51,14 @@
         </div>
 
             <div class="form-group col-md-3 ">
-                <label for="sdate">from</label>
-                <input type="date" name="sdate" placeholder="Starting Date?" v-model="sdate" class="form-control" id="sdate">
-                <span class="help is-danger" v-text="errors.get('sdate')"></span>
+                <label for="startdate">from</label>
+                <input type="date" name="startdate" placeholder="Starting Date?" v-model="startdate" class="form-control" id="startdate">
+                <span class="help is-danger" v-text="errors.get('startdate')"></span>
             </div>
             <div class="form-group col-md-3 ">
-                <label for="edate">To </label>
-                <input type="date" name="edate" placeholder="Finishing Date?" v-model="edate" class="form-control" id="edate">
-                <span class="help is-danger" v-text="errors.get('edate')"></span>
+                <label for="enddate">To </label>
+                <input type="date" name="enddate" placeholder="Finishing Date?" v-model="enddate" class="form-control" id="enddate">
+                <span class="help is-danger" v-text="errors.get('enddate')"></span>
             </div>
         </div>
 
@@ -68,11 +95,15 @@
         name: "EducationHistoryForm",
         data(){
             return{
-
-                education: '',
-                grade: '',
-                recentmajorprogramme: '',
-                recentinstitution: '',
+                items:[
+                    {'institution':'Mauritius', 'qualification':'1999','id':1, 'discipline':'3 weeks','startdate':'3 weeks','enddate':'3 weeks',},
+                    {'institution':'Canada',  'qualification':'1999','id':2, 'discipline':'3 weeks','startdate':'3 weeks','enddate':'3 weeks',},
+                ],
+                institution: '',
+                qualification: '',
+                discipline: '',
+                startdate: '',
+                enddate: '',
                 errors: new Errors(),
             }
         },
@@ -100,11 +131,11 @@
             getEdu() {
                 axios.get('/edu-history').then(response => {
 
+                    if(response.data){
+                        console.log(response.data)
+                        this.items = response.data;
+                    }
 
-                    // this.education = response.data.education;
-                    // this.grade = response.data.grade;
-                    // this.recentmajorprogramme = response.data.recentmajorprogramme;
-                    // this.recentinstitution = response.data.recentinstitution;
 
                 });
             },

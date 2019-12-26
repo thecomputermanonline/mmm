@@ -1,24 +1,26 @@
 <template>
 <div>
     <h2>Work Experience (up to the last 10 years)</h2>
-    <div class="table">
+    <div v-if="items" class="table col-md-12">
         <table class="rank-table">
             <thead>
             <tr>
                 <th>#</th>
                 <th>Company</th>
                 <th>Job Title</th>
-                <th>start date</th>
-                <th>end date</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Remove</th>
             </tr>
             </thead>
             <tbody>
-            <tr v-if="items" :key="item.id" v-for=" item in items " >
+            <tr  :key="item.id" v-for=" item in items " >
                 <td>{{item.id}}</td>
                 <td>{{item.company}}</td>
                 <td>{{item.jobtitle}}</td>
                 <td>{{item.startdate}}</td>
                 <td>{{item.enddate}}</td>
+                <td>X</td>
             </tr>
 
             </tbody>
@@ -39,13 +41,13 @@
             <span class="help is-danger" v-text="errors.get('jobtitle')"></span>
         </div>
         <div class="form-group col-md-6">
-            <label for="sdate">from</label>
-            <input type="date" name="sdate" placeholder="Starting Date?" v-model="sdate" class="form-control" id="sdate">
+            <label for="startdate">from</label>
+            <input type="date" name="startdate" placeholder="Starting Date?" v-model="startdate" class="form-control" id="startdate">
             <span class="help is-danger" v-text="errors.get('startdate')"></span>
         </div>
         <div class="form-group col-md-6">
-            <label for="edate">To </label>
-            <input type="date" name="edate" placeholder="Finishing Date?" v-model="edate" class="form-control" id="edate">
+            <label for="enddate">To </label>
+            <input type="date" name="enddate" placeholder="Finishing Date?" v-model="enddate" class="form-control" id="enddate">
             <span class="help is-danger" v-text="errors.get('enddate')"></span>
         </div>
     </div>
@@ -87,7 +89,7 @@
             return{
                 items:[
                     {'company':'Submit Personal Profile', 'jobtitle':'manager','id':1, 'startdate':'checked', 'enddate':'checked'},
-                    {'company':'Submit Personal Profile', 'jobtitle':'director', 'id':1, 'startdate':'checked', 'enddate':'checked'},
+                    {'company':'Submit Personal Profile', 'jobtitle':'director', 'id':2, 'startdate':'checked', 'enddate':'checked'},
                 ],
                 company: '',
                 jobtitle: '',
@@ -99,7 +101,7 @@
         methods: {
             onSubmit() {
 
-                axios.post('/work-exp', this.$data)
+                axios.post('/store-work-exp', this.$data)
                     .then(response => {
                         flash('Your Work Experience has been recorded.', 'success');
                         window.scroll({
@@ -118,10 +120,13 @@
                 });
             },
             getWork() {
-                axios.get('/work-exp').then(response => {
-
-
+                axios.get('/get-work-exp').then(response => {
+                if(response.data){
+                    //console.log(response.data)
                     this.items = response.data;
+                }
+
+
 
                 });
             },

@@ -32,9 +32,9 @@ class UserDependantsController extends Controller
     public function get_dependents()
     {
 
-        $user_dependents = UserDependents::where('user_id', Auth()->id())->first();
+        $user_dependents = UserDependant::where('user_id', Auth()->id())->first();
 
-
+//dd($user_dependents);
         return response()->json($user_dependents);
 
     }

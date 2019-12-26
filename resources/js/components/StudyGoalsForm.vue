@@ -5,8 +5,8 @@
         <h2>What is your current study goal?</h2>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="study">Have you got an offer of admission ?</label>
-                <select v-model="study" name ="study"  class="custom-select" id="study" @change="errors.clear('study')">
+                <label for="gotoffer">Have you got an offer of admission ?</label>
+                <select v-model="gotoffer" name ="gotoffer"  class="custom-select" id="gotoffer" @change="errors.clear('gotoffer')">
                     <option selected>Please select</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
@@ -23,17 +23,17 @@
         </div>
         <div class="form-row mb-5">
             <div class="form-group mb-md-0 col-md-6">
-                <label for="subject">Which course</label>
-                <input v-model="subject" name="subject" id="subject"  class="form-control" type="text" placeholder="Enter your subjects" >
-                <span class="help is-danger" v-text="errors.get('subject')"></span>
+                <label for="course">Which course</label>
+                <input v-model="course" name="course" id="course"  class="form-control" type="text" placeholder="course or discipline" >
+                <span class="help is-danger" v-text="errors.get('course')"></span>
             </div>
 
             <div class="form-group mb-0 col-md-6">
 
                     <div class="form-group">
-                        <label for="sdate">Starting Date</label>
-                        <input type="date" name="sdate" placeholder="When are you starting?" v-model="sdate" class="form-control" id="sdate">
-                        <span class="help is-danger" v-text="errors.get('sdate')"></span>
+                        <label for="startingdate">Starting Date</label>
+                        <input type="date" name="startingdate" placeholder="When are you starting?" v-model="startingdate" class="form-control" id="startingdate">
+                        <span class="help is-danger" v-text="errors.get('startingdate')"></span>
                     </div>
 
             </div>
@@ -227,10 +227,10 @@
         data() {
 
             return {
-                        study: '',
-                        subject: '',
-                        destination: '',
-                        when: '',
+                        school: '',
+                        startingdate: '',
+                        gotoffer: '',
+                        course: '',
                         undergraduate: [],
                         language: [],
                         postgraduate: [],

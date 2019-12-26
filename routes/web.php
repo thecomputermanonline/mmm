@@ -59,20 +59,40 @@ Route::get('/course-detail', function () {
 });
 Route::get('/articles', 'ArticlesController@index') ;
 Route::get('/articles/{article}', 'ArticlesController@show') ;
-Route::get('/get-finsup', 'UserInterestController@get_finsup')->name('get_finsup');
-Route::get('/get-study', 'UserInterestController@get_study')->name('get_study');
-Route::post('/get-study', 'UserInterestController@get_study')->name('get_study');
-//Route::get('/get-work', 'UserInterestController@get_work')->name('get_work');
-//Route::post('/get-work', 'UserInterestController@get_work')->name('get_work');
-Route::get('/get-work', 'UserWorkExperienceController@get_work_exp')->name('get_work_exp');
-Route::post('/store-work', 'UserWorkExperienceController@store')->name('store_work_exp');
-Route::get('/get-relocate', 'UserInterestController@get_relocate')->name('get_relocate');
-Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
-Route::post('/store-dependant', 'UserDependantsController@store')->name('store_dependants');
-Route::post('/store-finsup', 'UserFinancialPlanController@store')->name('store_finsup');
-Route::post('/store-countries-visited', 'UserVisitedCountries@store')->name('store_countries_visited');
 
+Route::post('/user/avatar', 'UserAvatarController@store');
+Route::get('/user/avatar', 'UserAvatarController@getit');
+Route::get('/user/destroy', 'UserProfileController@destroy');
+
+
+
+Route::get('/get-study', 'UserStudyController@get_study')->name('get_study');
+Route::post('/store-study', 'UserStudyController@store')->name('store_study');
+
+Route::get('/get-work', 'UserWorkController@get_work')->name('get_work');
+Route::post('/store-work', 'UserWorkController@store')->name('get_work');
+
+
+
+Route::get('/get-work-exp', 'UserWorkExperienceController@getWorkExp')->name('get_work_exp');
+Route::post('/store-work-exp', 'UserWorkExperienceController@store')->name('store_work_exp');
+
+Route::post('/store-dependant', 'UserDependantsController@store')->name('store_dependants');
+Route::get('/get-dependent', 'UserDependantsController@get_dependents')->name('get_dependents');
+
+
+Route::get('/userProfileGet', 'UserProfileController@userProfileGet');
+Route::post('/userProfileUpdate', 'UserProfileController@userProfileUpdate')->name('updateUserProfile');
+
+Route::post('/store-finsup', 'UserFinancialPlanController@store')->name('store_finsup');
+Route::get('/get-finsup', 'UserFinancialPlanController@get_finsup')->name('get_finsup');
+
+Route::post('/store-countries-visited', 'UserVisitedCountries@store')->name('store_countries_visited');
 Route::get('/get-countries-visited', 'UserVisitedCountries@get_countries')->name('get_countries_visited');
+
+
+
+
 Route::post('reset_password_without_token', 'UserController@validatePasswordRequest');
 Route::post('reset_password_with_token', 'UserController@resetPassword');
 
@@ -83,7 +103,7 @@ Route::post('/contact', 'MailController@contact')->name('contact');
 
 Route::get('/threads', 'ThreadsController@index')->name('index');
 Route::get('/threads/{thread}', 'ThreadsController@show')->name('show');
-Route::post('/userProfileUpdate', 'UserProfileController@userProfileUpdate')->name('updateUserProfile');
+
 Route::get('/testimonials', 'UserTestimonialController@index');
 Route::get('/testimonials/{testimonial}', 'UserTestimonialController@index');
 Auth::routes(['verify' => true]);

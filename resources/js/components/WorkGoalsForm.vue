@@ -16,25 +16,25 @@
                 <span class="help is-danger" v-text="errors.get('gotjob')"></span>
             </div>
             <div class="form-group col-md-6">
-                <label for="workdestination">Which company?</label>
-                <input id="workdestination" name="workdestination" v-model="workdestination" class="form-control" type="text" placeholder="e.g.IBM Canada">
+                <label for="company">Which company?</label>
+                <input id="company" name="company" v-model="company" class="form-control" type="text" placeholder="e.g.IBM Canada">
             </div>
 
         </div>
         <div class="form-row mb-5">
             <div class="form-group mb-md-0 col-md-6">
-                <label for="profession">What career path are you thnking of going into?</label>
-                <input id="profession" name="profession" v-model="profession" class="form-control" type="text" placeholder="Profession">
-                <span class="help is-danger" v-text="errors.get('discipline')"></span>
+                <label for="jobtitle">What career path are you thnking of going into?</label>
+                <input id="jobtitle" name="jobtitle" v-model="jobtitle" class="form-control" type="text" placeholder="jobtitle">
+                <span class="help is-danger" v-text="errors.get('jobtitle')"></span>
             </div>
             <div class="form-group mb-0 col-md-6">
-                <label for="certification">Do you have certification to work in the choosen career field?</label>
-                <select v-model="certification" name="certification"  class="custom-select" id="certification" @change="errors.clear('certification')">
-                    <option selected>Please select</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-                <span class="help is-danger" v-text="errors.get('certification')"></span>
+
+                <div class="form-group">
+                    <label for="startingdate">Starting Date</label>
+                    <input type="date" name="startdate" placeholder="When are you starting?" v-model="startingdate" class="form-control" id="startingdate">
+                    <span class="help is-danger" v-text="errors.get('startingdate')"></span>
+                </div>
+
             </div>
         </div>
 
@@ -76,17 +76,13 @@
                 data() {
 
                     return {
-                        location: '',
+                        company: '',
                         gotjob: '',
-                        profession: '',
-                        certification: '',
+                        jobtitle: '',
+                        startingdate: '',
                         undergraduate: [],
                         language: [],
                         postgraduate: [],
-                        education: '',
-                        grade: '',
-                        recentmajorprogramme: '',
-                        recentinstitution: '',
                         errors: new Errors(),
 
                     }
@@ -135,12 +131,9 @@
                            this.language = response.data.language.split(',');
                            this.undergraduate = response.data.undergraduate.split(',');
                            this.postgraduate = response.data.postgraduate.split(',');
-                            // this.education = response.data.education;
-                            // this.grade = response.data.grade;
-                            // this.recentmajorprogramme = response.data.recentmajorprogramme;
-                            // this.recentinstitution = response.data.recentinstitution;
 
-                        }).catch(error => console.log(error.response.data.errors));
+
+                        }).catch(error => error.response.data.errors);
                     },
                 },
                 created() {

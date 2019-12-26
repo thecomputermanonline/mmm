@@ -198,7 +198,7 @@
         }
     }
     export default {
-        components: {CountriesVisited},
+
         data() {
             return {
 
@@ -242,7 +242,7 @@
                     });
                 });
             },
-            getVisitedCountries() {
+            getBackgroundInfo() {
                 axios.get('/get-background-info').then(response => {
 
                     this.whyrelocate = response.data.whyrelocate;
@@ -251,7 +251,7 @@
             },
         },
         created() {
-            this.getRelocateGoal();
+            this.getBackgroundInfo();
         },
     }
 

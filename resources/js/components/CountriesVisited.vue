@@ -1,8 +1,32 @@
 <template>
     <section>
+        <h2 class="heading d-block">Countries Visited</h2>
+        <div v-if="items" class="table col-md-12">
+            <table class="rank-table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Country</th>
+                    <th>Year</th>
+                    <th>Duration</th>
+                    <th>Remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr  :key="item.id" v-for=" item in items " >
+                    <td>{{item.id}}</td>
+                    <td>{{item.country_name}}</td>
+                    <td>{{item.year}}</td>
+                    <td>{{item.duration}}</td>
 
+                    <td>X</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
         <form class="interest-form" method="post" action="/store-countries-visited" @submit.prevent="onSubmit" @change="errors.clear($event.target.name)">
-            <h2 class="heading d-block">Countries Visited</h2>
+
            <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="country">Country </label>
@@ -70,6 +94,12 @@
         data() {
 
             return {
+
+                items:[
+                    {'country_name':'Mauritius', 'year':'1999','id':1, 'duration':'3 weeks',},
+                    {'country_name':'Canada',  'year':'1999','id':2, 'duration':'3 weeks',},
+                ],
+
                 country_name:'',
                 year:'',
                 duration:'',
@@ -102,9 +132,10 @@
             getCountries() {
                 axios.get('/get-countries-visited').then(response => {
 
-                    // this.name = response.data.financial_support;
-                    // this.relationship = response.data.budget;
-                    // this.age = response.data.budget;
+                    if(response.data){
+                        console.log(response.data)
+                        this.items = response.data;
+                    }
 
                 });
             },

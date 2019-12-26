@@ -1,6 +1,28 @@
 <template>
 <section>
     <strong class="heading d-block">Dependants</strong>
+    <div v-if="items" class="table col-md-12">
+        <table class="rank-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+
+                <th>Remove</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr  :key="item.id" v-for=" item in items " >
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+
+                <td>X</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
     <form class="interest-form" method="post" action="/store-dependent" @submit.prevent="onSubmit" @change="errors.clear($event.target.name)">
         <div class="form-group">
             <label for="name">Name</label>
@@ -58,6 +80,10 @@
         data() {
 
             return {
+                items:[
+                    {'name':'JOHN DOE', 'id':1, },
+                    {'name':'Samuel moore', 'id':2, },
+                ],
                 name:'',
                 relationship:'',
                 age:'',
@@ -70,18 +96,7 @@
 
                 axios.post('/store-dependant', this.$data)
                     .then(response => {
-                        // this.study = response.data.study;
-                        // this.subject = response.data.subject;
-                        // this.destination = response.data.destination;
-                        // this.when = response.data.when;
-                        // this.undergraduate = response.data.undergraduate;
-                        // this.language = response.data.language;
-                        // this.undergraduate = response.data.undergraduate;
-                        // this.postgraduate = response.data.postgraduate;
-                        // this.education = response.data.education;
-                        // this.grade = response.data.grade;
-                        // this.recentmajorprogramme = response.data.recentmajorprogramme;
-                        // this.recentinstitution = response.data.recentinstitution;
+
                         flash('Your Dependent has been updated.', 'success');
                         window.scroll({
                             top: 0,
@@ -98,18 +113,19 @@
                     });
                 });
             },
-            getFinSup() {
+            getDependent() {
                 axios.get('/get-dependent').then(response => {
 
-                    this.name = response.data.financial_support;
-                    this.relationship = response.data.budget;
-                    this.age = response.data.budget;
+                    if(response.data){
+                       // console.log(response.data)
+                        this.items = response.data;
+                    }
 
                 });
             },
         },
         created() {
-            this.getFinSup();
+            this.getDependent();
         },
     }
 

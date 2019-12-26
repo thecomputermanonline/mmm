@@ -1,8 +1,5 @@
 <template>
-
-
     <div>
-
         <header id="header" class="main-header student-header">
             <div class="header-holder">
                 <div class="logo">
@@ -82,7 +79,7 @@
         data(){
             return {
                 isLoggedIn : null,
-                name : null
+               // name : null
             }
         },
         mounted(){

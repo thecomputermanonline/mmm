@@ -15,7 +15,8 @@
         "laravel/passport": "^8.0",
         "laravel/tinker": "^2.0",
         "qcod/laravel-imageup": "^1.0",
-        "vansteen/laravel-sendinblue": "^1.0"
+        "vansteen/laravel-sendinblue": "^1.0",
+        "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

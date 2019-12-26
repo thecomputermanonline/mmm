@@ -172,7 +172,7 @@
 
         },
         created() {
-            this.getImportantFactors();
+          //  this.getImportantFactors();
 
         },
     }

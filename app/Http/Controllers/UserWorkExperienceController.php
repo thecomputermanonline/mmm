@@ -32,10 +32,9 @@ class UserWorkExperienceController extends Controller
         return ['message'=>'Work abroad goals saved!'];
     }
 
-    public function get_work_exp()
+    public function getWorkExp()
     {
-        $user_works = UserWorkExperience()::where('user_id', Auth()->id())->get();
-        dd($user_works);
+        $user_works = UserWorkExperience::where('user_id', Auth()->id())->get();
         return response()->json($user_works);
 
     }
