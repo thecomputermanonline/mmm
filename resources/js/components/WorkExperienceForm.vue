@@ -41,12 +41,12 @@
         <div class="form-group col-md-6">
             <label for="sdate">from</label>
             <input type="date" name="sdate" placeholder="Starting Date?" v-model="sdate" class="form-control" id="sdate">
-            <span class="help is-danger" v-text="errors.get('sdate')"></span>
+            <span class="help is-danger" v-text="errors.get('startdate')"></span>
         </div>
         <div class="form-group col-md-6">
             <label for="edate">To </label>
             <input type="date" name="edate" placeholder="Finishing Date?" v-model="edate" class="form-control" id="edate">
-            <span class="help is-danger" v-text="errors.get('edate')"></span>
+            <span class="help is-danger" v-text="errors.get('enddate')"></span>
         </div>
     </div>
 
@@ -90,7 +90,7 @@
                     {'company':'Submit Personal Profile', 'jobtitle':'director', 'id':1, 'startdate':'checked', 'enddate':'checked'},
                 ],
                 company: '',
-                job_title: '',
+                jobtitle: '',
                 startdate: '',
                 enddate: '',
                 errors: new Errors(),
