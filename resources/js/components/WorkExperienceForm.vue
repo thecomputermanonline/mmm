@@ -1,6 +1,31 @@
 <template>
 <div>
     <h2>Work Experience (up to the last 10 years)</h2>
+    <div class="table">
+        <table class="rank-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Company</th>
+                <th>Job Title</th>
+                <th>start date</th>
+                <th>end date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-if="items" :key="item.id" v-for=" item in items " >
+                <td>{{item.id}}</td>
+                <td>{{item.company}}</td>
+                <td>{{item.jobtitle}}</td>
+                <td>{{item.startdate}}</td>
+                <td>{{item.enddate}}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="company">Company</label>
@@ -60,10 +85,14 @@
         name: "WorkExperienceForm",
         data(){
             return{
+                items:[
+                    {'company':'Submit Personal Profile', 'jobtitle':'manager','id':1, 'startdate':'checked', 'enddate':'checked'},
+                    {'company':'Submit Personal Profile', 'jobtitle':'director', 'id':1, 'startdate':'checked', 'enddate':'checked'},
+                ],
                 company: '',
-                job_level: '',
                 job_title: '',
-                location: '',
+                startdate: '',
+                enddate: '',
                 errors: new Errors(),
             }
         },
@@ -88,18 +117,15 @@
                     });
                 });
             },
-            getEdu() {
+            getWork() {
                 axios.get('/work-exp').then(response => {
-                    // this.education = response.data.education;
-                    // this.grade = response.data.grade;
-                    // this.recentmajorprogramme = response.data.recentmajorprogramme;
-                    // this.recentinstitution = response.data.recentinstitution;
+                    this.items = response.data;
 
                 });
             },
         },
         created() {
-            //this.getEdu();
+            this.getWork();
         },
     }
 </script>
