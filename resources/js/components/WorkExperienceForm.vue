@@ -119,6 +119,8 @@
             },
             getWork() {
                 axios.get('/work-exp').then(response => {
+
+
                     this.items = response.data;
 
                 });

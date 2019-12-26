@@ -35,6 +35,7 @@ class UserWorkExperienceController extends Controller
     public function get_work_exp()
     {
         $user_works = UserWorkExperience()::where('user_id', Auth()->id())->get();
+        dd($user_works);
         return response()->json($user_works);
 
     }
