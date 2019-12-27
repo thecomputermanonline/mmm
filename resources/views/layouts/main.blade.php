@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="TravelMasters"/>
-    <meta name="description" content="Immigration and Visa Consulting with Travel Masters"/>
+    <meta name="description" content="Immigration and Visa Consulting with Migration Masters"/>
     <meta name="keywords" content=" Travel, Canada, Coaching, Consulting, Mauritius, Immigration, Visa">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,32 +117,35 @@
                     <!-- Infotmation -->
                     <div class="headertopleft">
 
-                        @guest
-                           Welcome guest
-                        @else
-{{--                            <a href="{{ route('dashboard') }}" class="header-btn btn-primary tra-black-hover last-link">DashBoard</a>--}}
-{{--                           --}}
-                       Hi {{{ Auth::user()->name }}},
-                            <a class="header-btn btn-primary tra-black-hover last-link" href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
+                        <div class="header-info clearfix">
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        @endguest
-{{--                        <div class="header-info clearfix">--}}
-{{--                            <span class="txt-400"><i class="fas fa-map-marker-alt"></i>121 King St, Melbourne, Victoria 3000</span>--}}
-{{--                        </div>--}}
+                            @guest
+                               <span class="txt-400"><i class="fas fa-user-alt"></i> Welcome Guest!</span>
+                            @else
+                                {{--                            <a href="{{ route('dashboard') }}" class="header-btn btn-primary tra-black-hover last-link">DashBoard</a>--}}
+                                {{--                           --}}
+                                <span class="txt-400"><i class="fas fa-user-alt"></i>  Hi {{{ Auth::user()->name }}},</span>
+                                <a class="header-btn btn-primary tra-black-hover last-link" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            @endguest
+
+
+
+                        </div>
                     </div>
 
                     <!-- Contacts -->
                     <div class="headertopright header-contacts">
                         <a href="tel:123456789" class="callusbtn txt-400"><i class="fas fa-phone"></i>+230 57241414,</a>
                         <a href="tel:123456789" class="callusbtn b-right txt-400">&#8194;+1 730 005 7686</a>
-                        <a href="mailto:yourdomain@mail.com" class="txt-400"><i class="far fa-envelope-open"></i>findus@domain.com</a>
+                        <a href="mailto:yourdomain@mail.com" class="txt-400"><i class="far fa-envelope-open"></i>findus@migrationmasters.consulting</a>
                     </div>
 
                 </div>
@@ -156,8 +159,8 @@
 
                     <!-- LOGO IMAGE -->
                     <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 90 pixels) -->
-                    <div class="desktoplogo"><a href="{{ url('/') }}" class="logo-black"><img src="{{ asset('images/logo-black.png') }}" width="180" height="45" alt="header-logo"></a></div>
-                    <div class="desktoplogo"><a href="{{ url('/') }}" class="logo-white"><img src="{{ asset('images/logo-white.png') }}" width="180" height="45" alt="header-logo"></a></div>
+                    <div class="desktoplogo"><a href="{{ url('/') }}" class="logo-blackk"><img src="{{ asset('images/logo-blackk.png') }}" width="180" height="60" alt="header-logo"></a></div>
+                    <div class="desktoplogo"><a href="{{ url('/') }}" class="logo-white"><img src="{{ asset('images/logo-white.png') }}" width="180" height="60" alt="header-logo"></a></div>
 
 
                     <!-- MAIN MENU -->
@@ -371,7 +374,7 @@
 
                         <!-- Footer Logo -->
                         <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 400 x 100 pixels) -->
-                        <img src="images/logo-white.png" width="200" height="50" alt="footer-logo">
+                        <img src="images/logo-white.png" width="200" height="70" alt="footer-logo">
 
                         <!-- Text -->
                         <p class="mt-25">Aliquam orci a nullam tempor and sapien gravida donec enim ipsum porta
@@ -390,14 +393,14 @@
                         <h5 class="h5-md">Head Office</h5>
 
                         <!-- Address -->
-                        <p>121 King Street, Melbourne,</p>
-                        <p>Victoria 3000 Australia</p>
+                        <p>Avenue Des Melon, Flic en Flac</p>
+                        <p>Black River Business District, Mauritius</p>
 
                         <!-- Phone -->
-                        <p class="mt-20">Phone: +12 9 8765 4321</p>
+                        <p class="mt-20">Phone: +230 57241414</p>
 
                         <!-- Email -->
-                        <p class="foo-email">Email: <a href="mailto:yourdomain@mail.com">hello@demo.com</a></p>
+                        <p class="foo-email">Email: <a href="mailto:findus@migrationmasters.consulting">findus@migrationmasters.consulting</a></p>
 
                         <!-- Phone -->
                         <p>Office Time: 9AM - 6PM</p>
@@ -415,9 +418,9 @@
 
                         <!-- Footer Links -->
                         <ul class="foo-links clearfix">
-                            <li><a href="#">About VisaPRO</a></li>
+                            <li><a href="#">About MigrationMasters</a></li>
                             <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Pricing Packages</a></li>
+                            <li><a href="#">Fees</a></li>
                             <li><a href="#">Testimonials</a></li>
                             <li><a href="#">From the Blog</a></li>
                         </ul>

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Task extends Model
+class Services extends Model
 {
     use SoftDeletes;
 
@@ -17,7 +17,7 @@ class Task extends Model
         return $this->hasOne(Category::class);
     }
 
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
+//    public function user() {
+//        return $this->belongsTo(User::class);
+//    }
 }
