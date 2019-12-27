@@ -105,7 +105,7 @@
             <!-- MOBILE HEADER -->
             <div class="wsmobileheader clearfix">
                 <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-                <span class="smllogo"><img src="{{ asset('images/logo-black.png') }}" width="200" height="50" alt="mobile-logo"/></span>
+                <span class="smllogo"><img src="{{ asset('images/logo-black.png') }}" width="180" height="65" alt="mobile-logo"/></span>
                 <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
             </div>
 
