@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->string('phone');
+            $table->string('phone')->nullable();
             $table->string('visa_for')->default('Canada');
             $table->timestamps();
             $table->softDeletes();

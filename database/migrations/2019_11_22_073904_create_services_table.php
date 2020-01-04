@@ -15,7 +15,7 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id');
+          //  $table->integer('user_id');
             $table->string('title');
             $table->string('slug');
             $table->string('image');
@@ -24,7 +24,7 @@ class CreateServicesTable extends Migration
             $table->boolean('is_published')->default('1');
             $table->timestamps();
            // $table->timestamps('published_at')->nullable();
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            //$table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
 
         });
     }

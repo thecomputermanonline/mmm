@@ -14,18 +14,18 @@ class CreateArticlesTagsTable extends Migration
     public function up()
     {
         Schema::create('articles_tags', function (Blueprint $table) {
-//            $table->bigIncrements('id');
-//            $table->timestamps();
+            $table->bigIncrements('id');
+            $table->timestamps();
 
-            $table->unsignedBigInteger('article_id');
-            $table->unsignedBigInteger('tag_id');
+            $table->unsignedBigInteger('article_id')->unsigned();
+            $table->unsignedBigInteger('tag_id')->unsigned();
 
 //            //FOREIGN KEY CONSTRAINTS
             $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
             $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
 //
 //            //SETTING THE PRIMARY KEYS
-            $table->primary(['article_id','tag_id']);
+            $table->unique(['article_id','tag_id']);
         });
     }
 
